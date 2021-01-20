@@ -68,4 +68,53 @@ public class MyDate {
 		}
 	}
 
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + day;
+		result = prime * result + month;
+		result = prime * result + year;
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		MyDate other = (MyDate) obj;
+		if (day != other.day)
+			return false;
+		if (month != other.month)
+			return false;
+		if (year != other.year)
+			return false;
+		return true;
+	}
+
+//	@Override
+//	// myDate.equals(myDate2)
+//	public boolean equals(Object obj) {
+//		boolean isEqual = false;
+//		if (obj instanceof MyDate) {
+//			MyDate date = (MyDate) obj;
+//			if ((this.year == date.year) && (this.month == date.month) && (this.day == date.day)) {
+//				isEqual = true;
+//			}
+//		}
+//		return isEqual;
+//	}
+//	
+//	@Override
+//	public int hashCode() {
+//		// TODO Auto-generated method stub
+//		return this.year ^ this.month ^ this.day;
+//	}
+	
+	
+
 }
