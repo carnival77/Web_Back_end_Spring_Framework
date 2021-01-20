@@ -1,0 +1,13 @@
+package chap05.arrays;
+
+public class PrimitiveTypeArray {
+	public static void main(String[] args) {
+		// array ¼±¾ğ
+		int[] nums;
+		int num2 [];
+		nums = new int[3];
+		
+		
+		
+	}
+}

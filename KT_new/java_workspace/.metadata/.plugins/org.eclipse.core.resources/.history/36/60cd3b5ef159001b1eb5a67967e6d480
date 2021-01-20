@@ -1,0 +1,57 @@
+package workshop.account.entity;
+
+import java.io.InvalidClassException;
+
+public class Account {
+	private long custId;
+	private String acctId;
+	private int balance;
+
+	public Account() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Account(long custId, String acctId, int balance) {
+		super();
+		this.custId = custId;
+		this.acctId = acctId;
+		this.balance = balance;
+	}
+
+	public long getCustId() {
+		return custId;
+	}
+
+	public void setCustId(long custId) {
+		this.custId = custId;
+	}
+
+	public String getAcctId() {
+		return acctId;
+	}
+
+	public void setAcctId(String acctId) {
+		this.acctId = acctId;
+	}
+
+	public int getBalance() {
+		return balance;
+	}
+
+//	public void setBalance(int balance) {
+//		this.balance = balance;
+//	}
+
+	public void deposit(int amount) {
+		this.balance += amount;
+	}
+
+	public void withdraw(int amount) throws InvalidClassException {
+		if (balance >= amount) {
+			
+		}
+		this.balance -= amount;
+	}
+
+}

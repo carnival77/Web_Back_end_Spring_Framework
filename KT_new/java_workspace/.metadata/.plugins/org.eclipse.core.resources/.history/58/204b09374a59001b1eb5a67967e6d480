@@ -1,0 +1,15 @@
+package chap03.types;
+
+public class PrimitiveTypeTest {
+
+	boolean isFlag;
+	
+	
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// boolean
+	}
+
+}

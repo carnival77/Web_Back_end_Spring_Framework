@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"chap02.oop","c":"Dog","l":"Dog()","url":"%3Cinit%3E()"},{"p":"chap02.oop","c":"Dog","l":"getWeight()"},{"p":"chap02.oop","c":"Dog","l":"setWeight(int)"}]

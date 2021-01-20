@@ -1,0 +1,11 @@
+package com.app2;
+
+import com.app2.Account;
+
+public class TestAccount {
+	public static void main(String[] args) {
+		Account account;
+		
+		
+	}
+}

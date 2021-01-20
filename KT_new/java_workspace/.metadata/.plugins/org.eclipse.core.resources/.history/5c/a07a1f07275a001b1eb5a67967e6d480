@@ -1,0 +1,11 @@
+package com.app3;
+
+import com.app3.Student;
+
+public class StudentTest {
+	public static void main(String[] args) {
+		Student[] studentArray = new Student[3];
+
+		
+	}
+}

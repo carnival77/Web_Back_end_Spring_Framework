@@ -1,0 +1,16 @@
+package com.app3;
+
+import com.app3.Student;
+
+public class StudentTest {
+	public static void main(String[] args) {
+		Student[] studentArray = new Student[3];
+
+		studentArray[0] = new Student("È«±æµ¿",15,170,80);
+		studentArray[1] = new Student("ÇÑ»ç¶÷",13,180,70);
+		studentArray[2] = new Student("ÀÓ°ÆÁ¤",16,175,65);
+		
+		
+		
+	}
+}

@@ -1,0 +1,9 @@
+package chap05.arrays;
+
+import chap03.types.encapsulate.MyDate;
+
+public class ReferenceTypeArray {
+	public static void main(String[] args) {
+		MyDate[] dates = new MyDate[3];
+	}
+}

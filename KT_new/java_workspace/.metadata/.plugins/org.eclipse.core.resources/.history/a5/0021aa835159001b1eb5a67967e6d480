@@ -1,0 +1,13 @@
+package chap03.types.encapsulate;
+
+public class MyDate {
+
+	
+	public int year = 2020;
+	public int month = 1;
+	public int day = 1;
+	
+	default constructor
+	: 생성자 이름이 클래스와 반드시 같아야 한다
+	
+}

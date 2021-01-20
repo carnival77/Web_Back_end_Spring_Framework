@@ -1,0 +1,38 @@
+package workshop.person.control;
+
+import workshop.person.entity.PersonEntity;
+
+public class PersonManager {
+	
+	public PersonManager() {
+	}
+	
+	PersonEntity person_entity = new PersonEntity();
+	
+	public static void main(String[] args) {
+		PersonManager pManager = new PersonManager();
+		PersonEntity[] persons = new PersonEntity[10];
+	
+		
+	}
+	
+	public void fillPersons(PersonEntity[] persons) {
+		
+	}
+	
+	public void showPerson(PersonEntity[] persons) {
+		
+	}
+	
+	public int findbyGender(PersonEntity[] persons) {
+		
+		return 5;
+	}
+	
+	public void showPerson(PersonEntity[] persons, String name) {
+		
+	}
+	
+	
+	
+}

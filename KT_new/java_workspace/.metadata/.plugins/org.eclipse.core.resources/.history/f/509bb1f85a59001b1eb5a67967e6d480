@@ -1,0 +1,18 @@
+package chap05.arrays;
+
+public class PrimitiveTypeArray {
+	public static void main(String[] args) {
+		// array 識情
+		int[] nums;
+		int num2 [];
+		// array 識情 貢 持失.
+		nums = new int[3];
+		
+		System.out.println(nums);
+		System.out.println(nums.length);
+		System.out.println(nums[0]);
+		
+		
+		
+	}
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="chap03.types.PrimitiveTypeTest"/>
+    <fullyQualifiedTypeName name="chap03.types.encapsulate.MyDate"/>
+    <fullyQualifiedTypeName name="chap05.arrays.ReferenceTypeArray"/>
+    <fullyQualifiedTypeName name="workshop.person.control.PersonManager"/>
+    <fullyQualifiedTypeName name="workshop.person.entity.PersonEntity"/>
+    <fullyQualifiedTypeName name="workshop.account.entity.Account"/>
+    <fullyQualifiedTypeName name="java.io.InvalidClassException"/>
+    <fullyQualifiedTypeName name="workshop.account.exception.InvalidBalanceException"/>
+    <fullyQualifiedTypeName name="chap06.class1.Child"/>
+    <fullyQualifiedTypeName name="chap06.class1.Parent"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="oop.flexible.Employee"/>
+    <fullyQualifiedTypeName name="oop.flexible.MereClerk"/>
+    <fullyQualifiedTypeName name="oop.flexible.Manager"/>
+    <fullyQualifiedTypeName name="com.app1.Student"/>
+    <fullyQualifiedTypeName name="com.app2.Account"/>
+    <fullyQualifiedTypeName name="com.app3.Student"/>
+</qualifiedTypeNameHistroy>

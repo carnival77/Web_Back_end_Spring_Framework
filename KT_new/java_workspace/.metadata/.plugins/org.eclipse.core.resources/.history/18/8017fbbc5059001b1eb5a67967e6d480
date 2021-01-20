@@ -1,0 +1,8 @@
+package chap03.types.encapsulate;
+
+public class MyDate {
+
+	
+	public int year = 2020;
+	
+}

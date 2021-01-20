@@ -1,0 +1,13 @@
+package chap05.arrays;
+
+import chap03.types.encapsulate.MyDate;
+
+public class ReferenceTypeArray {
+	public static void main(String[] args) {
+		MyDate[] dates = new MyDate[3];
+		System.out.println(dates); // MyDate[]
+		System.out.println(dates[0]); // MyDate
+		
+		dates[0] = new MyDate(2020,1,1);
+	}
+}

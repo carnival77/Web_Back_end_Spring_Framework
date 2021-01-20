@@ -1,0 +1,19 @@
+1610955544361	Extract method 'printArray'
+1610955607656	Extract local variable 'test'
+1611014960870	Rename package 'workshop.person.control'
+1611014967065	Rename package 'workshop.person.entity'
+1611014974158	Rename package 'workshop.person_'
+1611015009991	Rename package 'workshop.person.control_'
+1611015016099	Rename package 'workshop.person.entity_'
+1611015053263	Delete element
+1611015065594	Rename package 'workshop.person_.control_'
+1611015072212	Rename package 'workshop.person_.entity_'
+1611017112590	Move packages
+1611017670101	Delete element
+1611021737388	Copy package
+1611021861994	Extract superclass 'Employee'
+1611021879969	Delete element
+1611022023470	Extract superclass 'Employee'
+1611024611013	Rename type 'Parent'
+1611035650622	Rename type 'InFlexibleCompanyDemo'
+1611036102511	Extract method 'printEmployeeInfo'

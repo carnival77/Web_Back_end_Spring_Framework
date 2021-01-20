@@ -1,0 +1,9 @@
+package oop.flexible;
+
+public class Employee {
+
+	public Employee() {
+		super();
+	}
+
+}
