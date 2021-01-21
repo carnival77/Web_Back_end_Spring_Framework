@@ -14,6 +14,7 @@ public class ListTest {
 //		strList.add(4);
 
 		String value = strList.get(1);
+		System.out.println(value);
 
 		for (String string : strList) {
 			System.out.println(string);
