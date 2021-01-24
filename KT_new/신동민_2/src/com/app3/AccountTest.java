@@ -7,7 +7,24 @@ public class AccountTest {
 		
 		System.out.println(account.toString());
 		
-		account.deposit(-10.0);
+		
+		try {
+			account.deposit(-10.0);
+//			account.withdraw(60000);
+		} catch (AccountException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			account.withdraw(600000);
+		} catch (AccountException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		System.out.println("¿Ã¿⁄ : "+account.calculateInterest());
+		
+		
 		
 	}
 }

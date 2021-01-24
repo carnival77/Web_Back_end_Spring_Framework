@@ -20,12 +20,20 @@ public class ShapeTest {
 			System.out.println(shape_names[i] + "\t" + shape[i].getArea() + "\t" + shape[i].getColors());
 		}
 
+		for (Shape shape2 : shape) {
+			if (shape2 instanceof Triangle) {
+				Triangle tri = (Triangle) shape2;
+				tri.setResize(5);
+			} else if (shape2 instanceof Rectangle) {
+				Rectangle rec = (Rectangle) shape2;
+				rec.setResize(5);
+			}
+		}
+
 		System.out.println("사이즈를 변경 후 정보");
 		for (int i = 0; i < shape.length; i++) {
 			System.out.println(shape_names[i] + "\t" + shape[i].getArea() + "\t" + shape[i].getColors());
 		}
-		
-		
 
 	}
 

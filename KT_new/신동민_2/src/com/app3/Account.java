@@ -1,11 +1,11 @@
 package com.app3;
 
+import java.nio.channels.AcceptPendingException;
+
 public class Account {
 	private String account;
 	private double balance;
 	private double interestRate;
-	
-//	AccountException exception = new AccountException();
 
 	public Account() {
 		super();
@@ -21,6 +21,7 @@ public class Account {
 
 	public double calculateInterest() {
 		double result = 0;
+		result = this.balance * this.interestRate;
 		return result;
 	}
 
@@ -29,30 +30,30 @@ public class Account {
 		return "Account [account=" + account + ", balance=" + balance + ", interestRate=" + interestRate + "]";
 	}
 
-	public void deposit (double money) throws AccountException{
-//		if(balance<money) {
-//			throw new AccountException("잔액이 부족");
-//		}
-			balance+= money;
-//		} catch (Exception e) {
-//			e.getMessage();
-//			AccountException(e);
-//			// TODO: handle exception
-//		}
-	}
-
-	public void withdraw (double money) throws AccountException {
-		if(balance<money) {
-			throw new AccountException("잔액이 부족");
+	public void deposit(double money) throws AccountException {
+		try {
+			if (money < 0) {
+				throw new AccountException("입금 금액이 0보다 적습니다.");
+			} else {
+				this.balance += money;
+			}
+		} catch (AccountException e) {
+			System.out.println(e.getMessage());
+			// TODO: handle
 		}
-			balance-=money;
-			
-		
 	}
 
-	private void AccountException(Exception e) {
-		// TODO Auto-generated method stub
-		
+	public void withdraw(double money) throws AccountException {
+		try {
+			if (balance < money) {
+				throw new AccountException("금액이 0보다 적거나 현재 잔액보다 많습니다.");
+			} else {
+				this.balance -= money;
+			}
+		} catch (AccountException e) {
+			System.out.println(e.getMessage());
+			// TODO: handle
+		}
 	}
 
 }

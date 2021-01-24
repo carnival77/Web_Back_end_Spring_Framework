@@ -4,7 +4,7 @@ public abstract class Employee {
 	
 //	abstract method를 하나 이상 가지면 자동으로 abstract 클래스가 된다.
 //	abstract 클래스는 스스로 객체를 생성할 수 없다.
-//	Employee emp = new Employee()l	 	(X)
+//	Employee emp = new Employee();	 	(X)
 //	Employee mgr = new Manager(); 	 	(O)
 //	Employee clerk = new MereClerk();	(O)
 //	

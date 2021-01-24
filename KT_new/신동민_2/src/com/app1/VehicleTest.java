@@ -15,8 +15,7 @@ public class VehicleTest {
 		car.moving(30);
 		System.out.println(car.toString());
 		System.out.println(car.getCost(30));
-		
-		
+
 	}
 
 }

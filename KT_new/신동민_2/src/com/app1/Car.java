@@ -21,13 +21,12 @@ public class Car extends Vehicle {
 		return super.getOilTankSize();
 	}
 
-	// getoiltanksize ¸Â³ª?
 	public void addOil(int oil) {
 		if (oil <= getOilTankSize()) {
 			this.restOil += oil;
 		}
 	}
-	
+
 	@Override
 	public int getMaxWeight() {
 		// TODO Auto-generated method stub
@@ -38,15 +37,7 @@ public class Car extends Vehicle {
 		if (weight <= getMaxWeight()) {
 			this.curWeight += weight;
 		}
-//		double result = weight / 100;
-//		setEfficiency(result);
 	}
-
-//	@Override
-//	public double getEfficiency() {
-//		// TODO Auto-generated method stub
-//		return super.getEfficiency();
-//	}
 
 	@Override
 	public void setEfficiency(double efficiency) {
@@ -55,7 +46,6 @@ public class Car extends Vehicle {
 	}
 
 	public void moving(int distance) {
-//		this.restOil =  restOil - 0.2*distance;
 	}
 
 	public double getRestOil() {

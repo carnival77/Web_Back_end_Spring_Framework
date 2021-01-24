@@ -11,13 +11,11 @@ public class Truck extends Car {
 		// TODO Auto-generated constructor stub
 	}
 
-
 	@Override
 	public double getEfficiency() {
-//		double result = getEfficiency() ;
 		// TODO Auto-generated method stub
 
-		return super.getEfficiency() - 0.2*(getCurWeight()/5);
+		return super.getEfficiency() - 0.2 * (getCurWeight() / 5);
 	}
 
 	@Override
@@ -30,7 +28,7 @@ public class Truck extends Car {
 	public void moving(int distance) {
 		double calc_oil = calcOil(distance);
 
-		setRestOil(calc_oil);
+		setRestOil(getRestOil() - calc_oil);
 
 		// TODO Auto-generated method stub
 		super.moving(distance);
@@ -39,11 +37,7 @@ public class Truck extends Car {
 	private double calcOil(int distance) {
 		int temp = (int) (distance / getEfficiency());
 
-//		System.out.println("temp : "+temp);
-		double result = getRestOil() - temp;
-
-//		System.out.println("result : " + result);
-		return result;
+		return temp;
 	}
 
 	@Override
@@ -61,8 +55,6 @@ public class Truck extends Car {
 	public int getCost(int distance) {
 		int result = 0;
 		double calc_oil = calcOil(distance);
-		
-//		System.out.println("calc_oil" + calc_oil);
 
 		result = (int) (3000 * calc_oil);
 		return result;
