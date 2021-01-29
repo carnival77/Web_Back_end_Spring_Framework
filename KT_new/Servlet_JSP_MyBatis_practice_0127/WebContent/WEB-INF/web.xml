@@ -9,4 +9,14 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>PracticeServlet</servlet-name>
+  	<servlet-class>jdbc.user.controller.PracticeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>PracticeServlet</servlet-name>
+  	<url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+  
 </web-app>

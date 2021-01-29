@@ -96,7 +96,7 @@ public class UserDAOMyBatis {
 	}
 
 	// User ¸®½ºÆ®
-	public List<UserVO> getUser() {
+	public List<UserVO> getUsers() {
 		List<UserVO> userList = null;
 		SqlSession session = sqlSessionFactory.openSession();
 		try {

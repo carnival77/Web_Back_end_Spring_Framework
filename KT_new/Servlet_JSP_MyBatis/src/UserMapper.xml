@@ -11,8 +11,7 @@
 	</select>
 
 	<select id="selectUserList" resultType="User">
-		select * from users order
-		by id
+		select * from users order by id
 	</select>
 
 	<insert id="insertUser" parameterType="User">

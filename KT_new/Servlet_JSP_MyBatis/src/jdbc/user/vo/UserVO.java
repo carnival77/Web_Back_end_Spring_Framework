@@ -1,6 +1,7 @@
 package jdbc.user.vo;
 
-import java.sql.Date;
+//import java.sql.Date;
+import java.sql.Timestamp;
 
 //import java.util.*;
 
@@ -73,11 +74,11 @@ public class UserVO {
 		this.city = city;
 	}
 
-	public Date getRegdate() {
+	public Timestamp getRegdate() {
 		return regdate;
 	}
 
-	public void setRegdate(Date regdate) {
+	public void setRegdate(Timestamp regdate) {
 		this.regdate = regdate;
 	}
 
@@ -92,7 +93,7 @@ public class UserVO {
 				+ ", regdate=" + regdate + "]";
 	}
 
-	public UserVO(int id, String userid, String name, String gender, String city, Date regdate) {
+	public UserVO(int id, String userid, String name, String gender, String city, Timestamp regdate) {
 		this(id, userid, name, gender, city);
 		this.regdate = regdate;
 	}
@@ -110,7 +111,7 @@ public class UserVO {
 	/**
 	 * 주소
 	 */
-	private Date regdate;
+	private Timestamp regdate;
 
 	/**
 	 * 가입일자

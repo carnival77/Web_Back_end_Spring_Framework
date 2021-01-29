@@ -41,7 +41,7 @@ public class UserDAOMyBatisTest {
 
 	@Test
 	public void selectList() {
-		List<UserVO> users = dao.getUser();
+		List<UserVO> users = dao.getUsers();
 		for (UserVO userVO : users) {
 			System.out.println(userVO);
 		}

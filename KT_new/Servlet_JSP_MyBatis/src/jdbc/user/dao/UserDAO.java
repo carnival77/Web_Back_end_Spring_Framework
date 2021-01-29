@@ -72,7 +72,7 @@ public class UserDAO {
 			rs = stmt.executeQuery();
 			if (rs.next()) {
 				userVO = new UserVO(rs.getInt("id"), rs.getString("userid"), rs.getString("name"),
-						rs.getString("gender"), rs.getString("city"), rs.getDate("regdate"));
+						rs.getString("gender"), rs.getString("city"), rs.getTimestamp("regdate"));
 			}
 
 			close(stmt, con);

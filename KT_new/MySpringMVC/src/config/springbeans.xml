@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- Properties file 설정 -->
+	<context:property-placeholder
+		location="classpath:config/values.properties" />
+
+	<!-- DI 전략 2의 Component Auto Scanning 설정 -->
+	<context:component-scan
+		base-package="myspring.di.annot" />
+
+	<!-- StringPrinter 클래스를 Bean 으로 등록 -->
+	<bean id="strPrinter" class="myspring.di.xml.StringPrinter" />
+
+	<!-- ConsolePrinter Bean 설정 -->
+	<bean id="conPrinter" class="myspring.di.xml.ConsolePrinter" />
+
+	<!-- Hello Bean 설정 -->
+	<!-- scope 1. Singleton(default) : 객체 생성 하나만 2. prototype : 항상 객체를 생성 3. 
+		reqeust, session : 웹에서 사용. session이 request 보다 scope가 더 넓다. -->
+	<bean id="hello" class="myspring.di.xml.Hello" scope="singleton">
+		<!-- Setter Injection 설정 -->
+		<property name="name" value="스프링" />
+		<property name="printer" ref="strPrinter" />
+		<property name="myMaps">
+			<map>
+				<entry key="100" value="스프링클라우드"></entry>
+				<entry key="200" value="스프링배치"></entry>
+				<entry key="300" value="스프링쿠버네티스"></entry>
+			</map>
+		</property>
+	</bean>
+
+	<bean id="helloC" class="myspring.di.xml.Hello">
+		<!-- Constructor Injection -->
+		<constructor-arg index="0" value="생성자" />
+		<constructor-arg index="1" ref="conPrinter" />
+	</bean>
+
+</beans>

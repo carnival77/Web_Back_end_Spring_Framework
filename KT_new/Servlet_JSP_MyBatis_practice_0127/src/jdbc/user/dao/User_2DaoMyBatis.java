@@ -65,7 +65,7 @@ public class User_2DaoMyBatis {
 
 		return intCnt;
 	}
-
+	
 	public List<User_2VO> getUserList() {
 		List<User_2VO> userList = null;
 		SqlSession session = sqlsessfac.openSession();
