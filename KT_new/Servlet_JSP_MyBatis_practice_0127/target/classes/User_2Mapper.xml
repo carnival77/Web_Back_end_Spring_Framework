@@ -14,7 +14,7 @@
 	</select>
 
 	<insert id="insertUser" parameterType="User_2">
-		insert into users_2 (userid,name) values (#{userid},#{name})
+		insert into users_2 (userid,name,gender,city) values (#{userid},#{name},#{gender},#{city})
 	</insert>
 
 	<update id="updateUser" parameterType="User_2">

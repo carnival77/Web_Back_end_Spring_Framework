@@ -23,11 +23,13 @@ public class User_2VO {
 		this.name = name;
 	}
 
-	public User_2VO(int id, String userid, String name) {
+	public User_2VO(String userid, String name, String gender, String city, Date regdate) {
 		super();
-		this.id = id;
 		this.userid = userid;
 		this.name = name;
+		this.gender = gender;
+		this.city = city;
+		this.regdate = regdate;
 	}
 
 	public User_2VO() {

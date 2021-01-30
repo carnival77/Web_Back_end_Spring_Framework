@@ -18,10 +18,9 @@
 		<c:forEach var="user" items="${users }" varStatus="status">
 			<tr>
 				<td>${status.count }</td>
+				<td>${user.userid }</td>
 				<td><a
-					href="userDetail.do?page=userDetail&userid=${user.userid}"}">
-						${user.userid } </a></td>
-				<td>${user.name }</td>
+					href="userDetail.do?page=userDetail&username=${user.name}"}">${user.name }</a></td>
 			</tr>
 		</c:forEach>
 

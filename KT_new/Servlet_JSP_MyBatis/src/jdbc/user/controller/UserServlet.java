@@ -48,7 +48,7 @@ public class UserServlet extends HttpServlet {
 //		Date date = new Date();
 //		out.println("<h3>현재 시간은 "+date+"</h3>");
 //		out.close();
-		
+
 		// Request(요청) 데이터 인코딩
 		request.setCharacterEncoding("UTF-8");
 
