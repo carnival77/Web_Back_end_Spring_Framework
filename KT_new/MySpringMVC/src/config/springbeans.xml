@@ -5,6 +5,13 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
+
+	<!-- 설정 메타정보 -->
+	<!-- (Configuration metadata) -->
+	<!-- : ApplicationContext 또는 BeanFactory 가 IoC 를 적용하기 위해 사용하는 메타정보 를 말함 -->
+	<!-- 설정 메타정보는 IoC 컨테이너에 의해 관리되는 Bean 객체를 생성하고 구성할 때 사용됨 -->
+
+	<!-- 하단의 Namespaces에서 context를 체크해야 한다. -->
 	<!-- Properties file 설정 -->
 	<context:property-placeholder
 		location="classpath:config/values.properties" />
@@ -23,7 +30,6 @@
 	<!-- scope 1. Singleton(default) : 객체 생성 하나만 2. prototype : 항상 객체를 생성 3. 
 		reqeust, session : 웹에서 사용. session이 request 보다 scope가 더 넓다. -->
 	<bean id="hello" class="myspring.di.xml.Hello" scope="singleton">
-		<!-- Setter Injection 설정 -->
 		<property name="name" value="스프링" />
 		<property name="printer" ref="strPrinter" />
 		<property name="myMaps">
@@ -32,13 +38,33 @@
 				<entry key="200" value="스프링배치"></entry>
 				<entry key="300" value="스프링쿠버네티스"></entry>
 			</map>
+			<!-- 컬렉션 (Collection) 타입의 값 주입 (Injection) ( -->
+			<!-- Spring은 List, Set, Map, Properties 와 같은 컬렉션 타입을 XML 로 작성해서 프로퍼티에 
+				주입하는 방법을 제공한다 -->
+			<!-- List 와 Set 타입 : <entry> 와 <value > 태그 를 이용 -->
+			<!-- 프로퍼티가 Set 타입 이면 <list> 대신에 <Set> 을 사용하면 된다. -->
+			<!-- Map 타입 : <Map> 과 <entry> 태그를 이용 -->
 		</property>
 	</bean>
+	<!-- Setter Injection 설정 -->
+	<!-- 의존성을 입력 받는 setter 메서드를 만들고 이를 통해 의존성을 주입한다 . -->
+	<!-- Setter Injection : <property>태그 -->
+	<!-- Setter 메서드를 통해 의존관계가 있는 Bean 을 주입하려면 <property> 태그의 ref 속성을 사용할 수 있다 
+		. -->
+	<!-- ref 속성은 사용하면 Bean 의 id 를 이용해 주입할 Bean 을 찾는다 -->
+	<!-- value 속성은 단순 값 또는 Bean 이 아닌 객체를 주입할 때 사용한다 . -->
+	<!-- Setter 메서드를 통해 Bean 의 레퍼런스가 아니라 단순 값을 주입하려고 할 때는 -->
+	<!-- <property> 태그의 value 속성을 사용한다 . -->
 
 	<bean id="helloC" class="myspring.di.xml.Hello">
-		<!-- Constructor Injection -->
 		<constructor-arg index="0" value="생성자" />
 		<constructor-arg index="1" ref="conPrinter" />
 	</bean>
+	<!-- Constructor Injection -->
+	<!-- 필요한 의존성을 포함하는 클래스의 생성자를 만들고 이를 통해 의존성을 주입한다 . -->
+	<!-- Constructor 를 통해 의존관계가 있는 Bean 을 주입하려면 <constructor arg > 태그를 사용할 수 
+		있다 . -->
+	<!-- Constructor 주입방식은 생성자의 파라미터를 이용하기 때문에 한번에 여러 개의 객체를 주입할 수 있다 -->
+
 
 </beans>
