@@ -14,7 +14,7 @@ public class StringPrinter implements Printer {
 
 	}
 
-	public String tostrString() {
+	public String toString() {
 		return this.builder.toString();
 	}
 
