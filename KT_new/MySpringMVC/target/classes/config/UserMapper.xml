@@ -9,6 +9,7 @@
 		select * from users where userid=#{value}
 		<!-- getter가 아닌 setter 메소드가 호출된다. db에서 가져온 것을 UserVO에 넣기 위해 setter가 호출된다. 
 			조회한 것을 VO에 담아야 한다. -->
+			
 	</select>
 
 	<select id="selectUserList" resultType="User">

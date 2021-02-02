@@ -6,6 +6,17 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
+	<!-- MapperScannerConfigurer 설정 -->
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="basePackage" value="myspring.user.dao.mapper" />
+		<property name="sqlSessionTemplateBeanName" value="sqlSession" />
+	</bean>
+
+	<!-- SqlSessionTemplate -->
+	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+		<constructor-arg ref="sqlSessionFactory" />
+	</bean>
+
 	<!-- SqlSessionFactoryBean 클래스를 Bean으로 등록 -->
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
@@ -29,7 +40,9 @@
 	<context:property-placeholder location="classpath:config/values.properties" />
 
 	<!-- DI 전략2의 Component Auto Scanning 설정 -->
-	<context:component-scan base-package="myspring.di.annot" />
+	<context:component-scan base-package="myspring.user">
+		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+	</context:component-scan>
 
 	<!-- StringPrinter 클래스를 Bean 으로 등록 -->
 	<bean id="strPrinter" class="myspring.di.xml.StringPrinter" />

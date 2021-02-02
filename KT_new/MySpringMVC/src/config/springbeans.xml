@@ -33,7 +33,6 @@
 		<property name="mapperLocations">
 			<list>
 				<value>classpath:config/UserMapper.xml</value>
-
 			</list>
 		</property>
 	</bean>
@@ -57,7 +56,10 @@
 	<!-- base-package="myspring.di.annot" /> -->
 
 	<context:component-scan
-		base-package="myspring.user" />
+		base-package="myspring.user">
+		<context:exclude-filter type="annotation"
+			expression="org.springframework.stereotype.Controller" />
+	</context:component-scan>
 
 	<!-- StringPrinter 클래스를 Bean 으로 등록 -->
 	<bean id="strPrinter" class="myspring.di.xml.StringPrinter" />

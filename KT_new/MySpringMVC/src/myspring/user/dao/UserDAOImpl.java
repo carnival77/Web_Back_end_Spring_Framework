@@ -20,6 +20,10 @@ public class UserDAOImpl implements IUserDAO {
 	@Autowired
 	private UserMapper userMapper;
 
+	public UserDAOImpl() {
+		System.out.println("UserDAO 기본생성자 호출됨");
+	}
+
 //	public UserDAOImpl(SqlSession session) {
 //		this.session = session;
 //	}
@@ -46,27 +50,12 @@ public class UserDAOImpl implements IUserDAO {
 	// User Delete
 	@Override
 	public int deleteUser(int id) {
-		int delCnt = 0;
-		List<UserVO> users = getUsers();
-		for (UserVO userVO : users) {
-			if (userVO.getId() == id) {
-				userMapper.deleteUser(id);
-				delCnt = 1;
-				break;
-			}
-		}
-		return delCnt;
+		return userMapper.deleteUser(id);
 	}
 
 	// User Insert
 	@Override
 	public int insertUser(UserVO user) {
-		int intCnt = 0;
-		if (user != null) {
-			intCnt = 1;
-		} else {
-			intCnt = 0;
-		}
-		return intCnt;
+		return userMapper.insertUser(user);
 	}
 }

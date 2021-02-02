@@ -8,6 +8,7 @@
 	<enableImports><![CDATA[false]]></enableImports>
 	<configs>
 		<config>src/config/springbeans.xml</config>
+		<config>src/config/springbeans-web.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
