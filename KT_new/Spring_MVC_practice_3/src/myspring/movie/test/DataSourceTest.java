@@ -15,6 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import myspring.movie.dao.IMovieDAO;
 import myspring.movie.dao.mapper.MovieMapper;
 import myspring.movie.vo.MovieVO;
 
@@ -32,6 +33,9 @@ public class DataSourceTest {
 
 	@Autowired
 	MovieMapper mapper;
+
+	@Autowired
+	IMovieDAO dao;
 
 	@Test
 	@Ignore
@@ -59,8 +63,35 @@ public class DataSourceTest {
 			System.out.println(movieVO);
 		}
 	}
-	
+
 	@Test
-	
+	@Ignore
+	public void mapper_insert() {
+		MovieVO movie = new MovieVO("BreakingDawn", "Fantasy", "idonknow", 160);
+		int result = mapper.insertMovie(movie);
+		System.out.println((result == 1) ? "insert 성공" : "insert 실패");
+	}
+
+	@Test
+	@Ignore
+	public void mapper_delete() {
+		int result = mapper.deleteMovie("미나리");
+		System.out.println((result == 1) ? "delete 성공" : "delete 실패");
+	}
+
+	@Test
+	@Ignore
+	public void mapper_update() {
+		MovieVO movie = new MovieVO("BreakingDawn", "action", "who?", 300);
+		mapper.updateMovie(movie);
+		System.out.println(mapper.selectMovieByMovietitle("BreakingDawn"));
+	}
+
+	@Test
+	@Ignore
+	public void dao() {
+		MovieVO movie = dao.selectMovieByMovietitle("BreakingDawn");
+		System.out.println(movie);
+	}
 
 }

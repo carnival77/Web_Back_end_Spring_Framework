@@ -75,9 +75,8 @@ public class MovieVO {
 				+ ", runningtime=" + runningtime + ", opendate=" + opendate + "]";
 	}
 
-	public MovieVO(int id, String title, String genre, String director, int runningtime) {
+	public MovieVO(String title, String genre, String director, int runningtime) {
 		super();
-		this.id = id;
 		this.title = title;
 		this.genre = genre;
 		this.director = director;

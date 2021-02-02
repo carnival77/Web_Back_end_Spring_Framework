@@ -43,6 +43,10 @@
 		</property>
 	</bean>
 
+	<context:component-scan
+		base-package="myspring.movie">
+	</context:component-scan>
+
 
 
 </beans>
