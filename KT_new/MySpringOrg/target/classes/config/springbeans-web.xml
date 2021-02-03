@@ -18,4 +18,10 @@
 		<property name="suffix" value=".jsp" />
 	</bean>
 	
+	<!-- url pattern 충돌 문제 설정 -->
+	<mvc:default-servlet-handler />
+	
+	<!-- json suppeort -->
+	<mvc:annotation-driven />
+	
 </beans>

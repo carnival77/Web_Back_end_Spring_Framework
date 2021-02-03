@@ -3,22 +3,23 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>    
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>사용자 목록</title>
+<jsp:include page="common.jsp" />
 
 <script type="text/javascript">
 	function userDelete(id,userid) {
 		var result = confirm(userid + " 사용자를 정말 삭제하시겠습니까?");
 		if(result) {
-			location.href="userDelete.do?id=" + id;
+			location.href="userDelete.do/" + id;
 		}
 	}
 </script>
 </head>
 <body>
-	<h2>사용자 목록</h2>
-	<table>
+	<div class="text-center">
+		<h2>사용자 목록</h2>
+	</div>
+	<div class="container p-3">
+	<table class="table table-striped">
 		<tr>
 			<th>순서</th>
 			<th>사용자ID</th>
@@ -44,5 +45,6 @@
 			</tr>
 		</c:forEach>
 	</table>
+	</div>
 </body>
 </html>
