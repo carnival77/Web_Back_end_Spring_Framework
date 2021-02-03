@@ -67,7 +67,7 @@ public class DataSourceTest {
 	@Test
 	@Ignore
 	public void mapper_insert() {
-		MovieVO movie = new MovieVO("BreakingDawn", "Fantasy", "idonknow", 160);
+		MovieVO movie = new MovieVO("Test", "action", "dd", 160);
 		int result = mapper.insertMovie(movie);
 		System.out.println((result == 1) ? "insert 성공" : "insert 실패");
 	}
@@ -75,7 +75,7 @@ public class DataSourceTest {
 	@Test
 	@Ignore
 	public void mapper_delete() {
-		int result = mapper.deleteMovie("미나리");
+		int result = mapper.deleteMovie(4);
 		System.out.println((result == 1) ? "delete 성공" : "delete 실패");
 	}
 
@@ -90,8 +90,9 @@ public class DataSourceTest {
 	@Test
 	@Ignore
 	public void dao() {
-		MovieVO movie = dao.selectMovieByMovietitle("BreakingDawn");
-		System.out.println(movie);
+//		MovieVO movie = dao.getMovie("BreakingDawn");
+		List<MovieVO> movies = dao.getMovies();
+		System.out.println(movies);
 	}
 
 }

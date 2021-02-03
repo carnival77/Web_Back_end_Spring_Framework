@@ -21,5 +21,12 @@
 		<property name="prefix" value="/"></property>
 		<property name="suffix" value=".jsp"></property>
 	</bean>
+	
+	<!-- url pattern 충돌 문제 설정 -->
+	<mvc:default-servlet-handler/>
+	
+	<!-- json support -->
+	<mvc:annotation-driven>
+	</mvc:annotation-driven>
 
 </beans>

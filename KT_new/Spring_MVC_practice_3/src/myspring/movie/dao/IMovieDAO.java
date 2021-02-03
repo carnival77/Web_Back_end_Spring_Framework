@@ -5,13 +5,13 @@ import java.util.List;
 import myspring.movie.vo.MovieVO;
 
 public interface IMovieDAO {
-	MovieVO selectMovieByMovietitle(String title);
+	MovieVO getMovie(String title);
 
-	List<MovieVO> selectMovieList();
+	List<MovieVO> getMovies();
 
 	int insertMovie(MovieVO movie);
 
 	int updateMovie(MovieVO movie);
 
-	int deleteMovie(String title);
+	int deleteMovie(int id);
 }

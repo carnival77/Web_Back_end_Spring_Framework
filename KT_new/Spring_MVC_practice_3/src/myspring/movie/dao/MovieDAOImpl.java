@@ -20,13 +20,13 @@ public class MovieDAOImpl implements IMovieDAO {
 	}
 
 	@Override
-	public MovieVO selectMovieByMovietitle(String title) {
+	public MovieVO getMovie(String title) {
 		// TODO Auto-generated method stub
 		return movieMapper.selectMovieByMovietitle(title);
 	}
 
 	@Override
-	public List<MovieVO> selectMovieList() {
+	public List<MovieVO> getMovies() {
 		// TODO Auto-generated method stub
 		return movieMapper.selectMovieList();
 	}
@@ -44,9 +44,9 @@ public class MovieDAOImpl implements IMovieDAO {
 	}
 
 	@Override
-	public int deleteMovie(String title) {
+	public int deleteMovie(int id) {
 		// TODO Auto-generated method stub
-		return movieMapper.deleteMovie(title);
+		return movieMapper.deleteMovie(id);
 	}
 
 }

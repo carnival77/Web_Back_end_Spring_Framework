@@ -3,24 +3,18 @@
 <%@ page import="java.util.Date"%>
 <!DOCTYPE html>
 <html>
-<%-- <%@ include file="common.jsp"%> --%>
-<jsp:include page="common.jsp" />
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>영화 관리 프로그램</title>
 </head>
 <body>
-	<div class=" text-center">
-	<h1>사용자 관리</h1>
-	</div>
+	<h1>영화 관리</h1>
 	<%--
 	 --%>
-	 <div class="container pt-3">
 	<ul>
-		<li><a href="userList.do">1.사용자 리스트</a></li>
-		<li><a href="userInsert.do">2.사용자 등록</a></li>
+		<li><a href="movieList.do">1.영화 리스트</a></li>
+		<li><a href="movieInsert.do">2.영화 등록</a></li>
 	</ul>
-	</div>
 
 
 	<!--

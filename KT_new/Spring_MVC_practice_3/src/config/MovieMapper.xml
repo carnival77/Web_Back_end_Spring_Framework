@@ -26,8 +26,8 @@
 		title = #{title}
 	</update>
 
-	<delete id="deleteMovie" parameterType="string">
+	<delete id="deleteMovie" parameterType="int">
 		delete from movie where
-		title=#{value}
+		id=#{value}
 	</delete>
 </mapper>

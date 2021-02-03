@@ -13,5 +13,5 @@ public interface MovieMapper {
 	
 	int updateMovie(MovieVO movie);
 	
-	int deleteMovie(String title);
+	int deleteMovie(int id);
 }
