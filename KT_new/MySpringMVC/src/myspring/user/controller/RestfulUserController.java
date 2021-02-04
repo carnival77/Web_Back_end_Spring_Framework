@@ -48,4 +48,10 @@ public class RestfulUserController {
 	public List<UserVO> users() {
 		return dao.getUsers();
 	}
+	
+	@GetMapping("/cities")
+	public List<String> cityList() {
+		return List.of("서울", "경기", "부산", "대구");
+	}
+
 }

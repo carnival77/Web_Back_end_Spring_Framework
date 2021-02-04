@@ -5,10 +5,10 @@
 <html>
 <%-- <%@ include file="common.jsp"%> --%>
 <jsp:include page="common.jsp" />
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
+<!-- <head> -->
+<!-- <meta charset="UTF-8"> -->
+<!-- <title>Insert title here</title> -->
+<!-- </head> -->
 <body>
 	<div class=" text-center">
 	<h1>사용자 관리</h1>

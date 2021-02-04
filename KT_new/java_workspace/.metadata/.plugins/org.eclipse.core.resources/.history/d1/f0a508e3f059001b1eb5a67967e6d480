@@ -1,5 +1,0 @@
-package workshop.account.exception;
-
-public class InvalidBalanceException {
-
-}
