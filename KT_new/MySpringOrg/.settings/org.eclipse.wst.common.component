@@ -9,7 +9,7 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
                 
         <property name="java-output-path" value="/MySpringMVC/build/classes"/>
-        <property name="context-root" value="MySpringOrg"/>
+        <property name="context-root" value="MySpringMVC"/>
             
     </wb-module>
     

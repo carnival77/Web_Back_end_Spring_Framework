@@ -153,7 +153,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="MySpringMVC" path="/MySpringMVC" reloadable="true" source="org.eclipse.jst.jee.server:MySpringMVC"/><Context docBase="MySpringOrg" path="/MySpringOrg" reloadable="true" source="org.eclipse.jst.jee.server:MySpringOrg"/><Context docBase="Spring_MVC_practice_3" path="/Spring_MVC_practice_3" reloadable="true" source="org.eclipse.jst.jee.server:Spring_MVC_practice_3"/><Context docBase="Servlet_JSP_MyBatis" path="/Servlet_JSP_MyBatis" reloadable="true" source="org.eclipse.jst.jee.server:Servlet_JSP_MyBatis"/></Host>
+      <Context docBase="MySpringMVC" path="/MySpringMVC" reloadable="true" source="org.eclipse.jst.jee.server:MySpringMVC"/><Context docBase="Spring_MVC_practice_3" path="/Spring_MVC_practice_3" reloadable="true" source="org.eclipse.jst.jee.server:Spring_MVC_practice_3"/><Context docBase="Servlet_JSP_MyBatis" path="/Servlet_JSP_MyBatis" reloadable="true" source="org.eclipse.jst.jee.server:Servlet_JSP_MyBatis"/></Host>
     </Engine>
   </Service>
 </Server>
