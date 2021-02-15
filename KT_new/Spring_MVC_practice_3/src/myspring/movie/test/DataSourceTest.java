@@ -49,9 +49,8 @@ public class DataSourceTest {
 	}
 
 	@Test
-	@Ignore
 	public void mapper_selectOne() {
-		MovieVO movie = mapper.selectMovieByMovietitle("미나리");
+		MovieVO movie = mapper.selectMovieByMovietitle("올드보이");
 		System.out.println(movie);
 	}
 
