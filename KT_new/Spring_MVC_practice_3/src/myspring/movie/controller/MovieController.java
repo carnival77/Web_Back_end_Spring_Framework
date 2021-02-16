@@ -55,6 +55,7 @@ public class MovieController {
 
 	@PostMapping("/movieInsert.do")
 	public String movieInsert(@ModelAttribute MovieVO movieVO) {
+		
 		int cnt = dao.insertMovie(movieVO);
 		if (cnt == 1) {
 			return "redirect:/movieList.do";
