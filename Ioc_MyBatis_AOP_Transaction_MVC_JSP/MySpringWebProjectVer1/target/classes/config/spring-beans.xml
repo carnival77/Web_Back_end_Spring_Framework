@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+	<!-- 전략 1 : 모든 빈을 xml에서 관리 -->
+	<!-- Hello 클래스를 Bean으로 등록 : constructor injection -->
+	<bean id="helloC" class="myspring.di.xml.Hello">
+		<!-- constructor injection -->
+		<constructor-arg name="name" value="생성자"></constructor-arg>
+		<constructor-arg name="printer" ref="conPrinter"></constructor-arg>
+		<property name="names">
+			<list>
+				<value>자바</value>
+				<value>코틀린</value>
+				<value>파이썬</value>
+			</list>
+		</property>
+	</bean>
+
+	<!-- Hello 클래스를 Bean으로 등록 -->
+	<bean id="hello" class="myspring.di.xml.Hello">
+		<!-- setter injection -->
+		<property name="name" value="스프링"></property>
+		<property name="printer" ref="strPrinter"></property>
+	</bean>
+
+	<!-- StringPrinter 클래스를 Bean으로 등록 -->
+	<bean id="strPrinter" class="myspring.di.xml.StringPrinter" />
+
+	<!-- ConsolePrinter 클래스를 Bean으로 등록 -->
+	<bean id="conPrinter" class="myspring.di.xml.ConsolePrinter" />
+
+	<!-- 전략 2 : Auto Component Scanning 설정 -->
+	<context:component-scan
+		base-package="myspring.di.annotation"></context:component-scan>
+
+	<!-- properties file 정보 설정 -->
+	<context:property-placeholder
+		location="config/values.properties" />
+
+	<!-- Commons DBCP BasicDataSource 클래스를 Bean으로 등록 -->
+	<bean id="dataSource"
+		class="org.apache.commons.dbcp2.BasicDataSource"
+		p:driverClassName="${db.driverClass}" 
+		p:url="${db.url}"
+		p:username="${db.username}" 
+		p:password="${db.password}"
+		p:maxTotal="${db.maxTotal}" 
+		p:maxIdle="${db.maxIdle}" />
+
+</beans>

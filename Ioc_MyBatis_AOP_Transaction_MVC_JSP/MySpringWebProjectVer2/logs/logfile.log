@@ -1,0 +1,622 @@
+2021-07-13 15:00:00 289 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2021-07-13 15:00:00 532 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2021-07-13 15:00:00 534 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [config/SqlMapConfig.xml]'
+2021-07-13 15:00:00 615 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\config\StudentMapper.xml]'
+2021-07-13 15:00:00 635 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\config\UserMapper.xml]'
+2021-07-13 15:00:00 745 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2021-07-13 15:00:00 753 [main] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e8dcdaa] was not registered for synchronization because synchronization is not active
+2021-07-13 15:00:00 956 [main] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [1723290893, URL=jdbc:mariadb://127.0.0.1:3307/spring_db?useUnicode=true&charaterEncoding=utf-8&useSSL=false&serverTimezone=UTC, MariaDB Connector/J] will not be managed by Spring
+2021-07-13 15:00:00 965 [main] DEBUG userNS.selectUserById - ==>  Preparing: select * from users where userid=? 
+2021-07-13 15:00:00 993 [main] DEBUG userNS.selectUserById - ==> Parameters: dooly(String)
+2021-07-13 15:00:01 019 [main] DEBUG userNS.selectUserById - <==      Total: 1
+2021-07-13 15:00:01 023 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e8dcdaa]
+2021-07-13 15:08:42 441 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2021-07-13 15:08:42 708 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2021-07-13 15:08:42 712 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [config/SqlMapConfig.xml]'
+2021-07-13 15:08:42 869 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\config\StudentMapper.xml]'
+2021-07-13 15:08:42 884 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\config\UserMapper.xml]'
+2021-07-13 15:08:42 996 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2021-07-13 15:08:43 003 [main] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5cbe877d] was not registered for synchronization because synchronization is not active
+2021-07-13 15:08:43 101 [main] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [833240229, URL=jdbc:mariadb://127.0.0.1:3307/spring_db?useUnicode=true&charaterEncoding=utf-8&useSSL=false&serverTimezone=UTC, MariaDB Connector/J] will not be managed by Spring
+2021-07-13 15:08:43 111 [main] DEBUG userNS.insertUser - ==>  Preparing: insert into users (userid, name, gender, city) values(?,?,?,? ) 
+2021-07-13 15:08:43 136 [main] DEBUG userNS.insertUser - ==> Parameters: spring(String), 스프링(String), 남(String), 경기(String)
+2021-07-13 15:08:43 147 [main] DEBUG userNS.insertUser - <==    Updates: 1
+2021-07-13 15:08:43 148 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5cbe877d]
+2021-07-13 16:01:48 331 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2021-07-13 16:01:48 341 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\MyMapper.class]
+2021-07-13 16:01:48 346 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\StudentMapper.class]
+2021-07-13 16:01:48 347 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\UserMapper.class]
+2021-07-13 16:01:48 349 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'myMapper' and 'myspring.user.dao.mapper.MyMapper' mapperInterface
+2021-07-13 16:01:48 349 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'studentMapper' and 'myspring.user.dao.mapper.StudentMapper' mapperInterface
+2021-07-13 16:01:48 349 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'myspring.user.dao.mapper.UserMapper' mapperInterface
+2021-07-13 16:01:48 828 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2021-07-13 16:01:48 830 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [config/SqlMapConfig.xml]'
+2021-07-13 16:01:48 939 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\config\StudentMapper.xml]'
+2021-07-13 16:01:48 959 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\config\UserMapper.xml]'
+2021-07-13 16:01:49 209 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2021-07-13 16:01:49 218 [main] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@781f10f2] was not registered for synchronization because synchronization is not active
+2021-07-13 16:01:49 347 [main] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [1645624121, URL=jdbc:mariadb://127.0.0.1:3307/spring_db?useUnicode=true&charaterEncoding=utf-8&useSSL=false&serverTimezone=UTC, MariaDB Connector/J] will not be managed by Spring
+2021-07-13 16:01:49 352 [main] DEBUG myspring.user.dao.mapper.StudentMapper.selectStudentDept - ==>  Preparing: select s.stu_id, s.stu_code, s.stu_name, s.stu_age, s.stu_grade, s.stu_daynight, d.dept_id, d.dept_code, d.dept_name from student s, dept d where s.dept_code = d.dept_code and s.stu_code = ? 
+2021-07-13 16:01:49 368 [main] DEBUG myspring.user.dao.mapper.StudentMapper.selectStudentDept - ==> Parameters: 1002(Integer)
+2021-07-13 16:01:49 385 [main] DEBUG myspring.user.dao.mapper.StudentMapper.selectStudentDept - <==      Total: 1
+2021-07-13 16:01:49 388 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@781f10f2]
+2021-07-13 16:16:22 316 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2021-07-13 16:16:22 324 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\MyMapper.class]
+2021-07-13 16:16:22 326 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\StudentMapper.class]
+2021-07-13 16:16:22 328 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\UserMapper.class]
+2021-07-13 16:16:22 330 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'myMapper' and 'myspring.user.dao.mapper.MyMapper' mapperInterface
+2021-07-13 16:16:22 331 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'studentMapper' and 'myspring.user.dao.mapper.StudentMapper' mapperInterface
+2021-07-13 16:16:22 331 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'myspring.user.dao.mapper.UserMapper' mapperInterface
+2021-07-13 16:16:22 712 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2021-07-13 16:16:22 713 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [config/SqlMapConfig.xml]'
+2021-07-13 16:16:22 833 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\config\StudentMapper.xml]'
+2021-07-13 16:16:22 854 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\config\UserMapper.xml]'
+2021-07-13 16:16:22 954 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2021-07-13 16:16:22 959 [main] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@781f10f2] was not registered for synchronization because synchronization is not active
+2021-07-13 16:16:23 070 [main] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [1645624121, URL=jdbc:mariadb://127.0.0.1:3307/spring_db?useUnicode=true&charaterEncoding=utf-8&useSSL=false&serverTimezone=UTC, MariaDB Connector/J] will not be managed by Spring
+2021-07-13 16:16:23 073 [main] DEBUG myspring.user.dao.mapper.StudentMapper.selectStudentCourseStatus - ==>  Preparing: select s.stu_id, s.stu_code, s.stu_name, s.stu_age, s.stu_grade, s.stu_daynight, d.dept_id, d.dept_code, d.dept_name, c.course_id, c.course_code, c.course_name, c.course_instructor, t.status_id, t.COURSE_SCORE from student s, dept d, course_status t, course c where s.stu_code = t.stu_code and s.dept_code = d.dept_code and t.course_code = c.course_code and s.stu_code = ? 
+2021-07-13 16:16:23 094 [main] DEBUG myspring.user.dao.mapper.StudentMapper.selectStudentCourseStatus - ==> Parameters: 1002(Integer)
+2021-07-13 16:16:23 115 [main] DEBUG myspring.user.dao.mapper.StudentMapper.selectStudentCourseStatus - <==      Total: 2
+2021-07-13 16:16:23 118 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@781f10f2]
+2021-07-13 16:48:11 213 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2021-07-13 16:48:11 270 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\MyMapper.class]
+2021-07-13 16:48:11 272 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\StudentMapper.class]
+2021-07-13 16:48:11 274 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\UserMapper.class]
+2021-07-13 16:48:11 300 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'myMapper' and 'myspring.user.dao.mapper.MyMapper' mapperInterface
+2021-07-13 16:48:11 304 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'studentMapper' and 'myspring.user.dao.mapper.StudentMapper' mapperInterface
+2021-07-13 16:48:11 305 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'myspring.user.dao.mapper.UserMapper' mapperInterface
+2021-07-13 16:48:11 889 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2021-07-13 16:48:11 892 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [config/SqlMapConfig.xml]'
+2021-07-13 16:48:12 168 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\config\StudentMapper.xml]'
+2021-07-13 16:48:12 268 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\config\UserMapper.xml]'
+2021-07-13 16:48:12 592 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2021-07-13 16:48:12 603 [main] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@47a5b70d] was not registered for synchronization because synchronization is not active
+2021-07-13 16:48:12 878 [main] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [635610193, URL=jdbc:mariadb://127.0.0.1:3307/spring_db?useUnicode=true&charaterEncoding=utf-8&useSSL=false&serverTimezone=UTC, MariaDB Connector/J] will not be managed by Spring
+2021-07-13 16:48:12 882 [main] DEBUG myspring.user.dao.mapper.StudentMapper.selectStudentCourseStatus - ==>  Preparing: select s.stu_id, s.stu_code, s.stu_name, s.stu_age, s.stu_grade, s.stu_daynight, d.dept_id, d.dept_code, d.dept_name, c.course_id, c.course_code, c.course_name, c.course_instructor, t.status_id, t.COURSE_SCORE from student s, dept d, course_status t, course c where s.stu_code = t.stu_code and s.dept_code = d.dept_code and t.course_code = c.course_code and s.stu_code = ? 
+2021-07-13 16:48:12 908 [main] DEBUG myspring.user.dao.mapper.StudentMapper.selectStudentCourseStatus - ==> Parameters: 1002(Integer)
+2021-07-13 16:48:12 929 [main] DEBUG myspring.user.dao.mapper.StudentMapper.selectStudentCourseStatus - <==      Total: 2
+2021-07-13 16:48:12 933 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@47a5b70d]
+2021-07-13 16:48:12 939 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2021-07-13 16:48:12 940 [main] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@12bcd0c0] was not registered for synchronization because synchronization is not active
+2021-07-13 16:48:12 940 [main] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [1215951090, URL=jdbc:mariadb://127.0.0.1:3307/spring_db?useUnicode=true&charaterEncoding=utf-8&useSSL=false&serverTimezone=UTC, MariaDB Connector/J] will not be managed by Spring
+2021-07-13 16:48:12 940 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - ==>  Preparing: select * from users where userid=? 
+2021-07-13 16:48:12 941 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - ==> Parameters: spring(String)
+2021-07-13 16:48:12 943 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - <==      Total: 1
+2021-07-13 16:48:12 944 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@12bcd0c0]
+2021-07-13 16:48:22 111 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2021-07-13 16:48:22 120 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\MyMapper.class]
+2021-07-13 16:48:22 121 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\StudentMapper.class]
+2021-07-13 16:48:22 122 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\UserMapper.class]
+2021-07-13 16:48:22 124 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'myMapper' and 'myspring.user.dao.mapper.MyMapper' mapperInterface
+2021-07-13 16:48:22 124 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'studentMapper' and 'myspring.user.dao.mapper.StudentMapper' mapperInterface
+2021-07-13 16:48:22 125 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'myspring.user.dao.mapper.UserMapper' mapperInterface
+2021-07-13 16:48:22 460 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2021-07-13 16:48:22 463 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [config/SqlMapConfig.xml]'
+2021-07-13 16:48:22 561 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\config\StudentMapper.xml]'
+2021-07-13 16:48:22 583 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\config\UserMapper.xml]'
+2021-07-13 16:48:22 701 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2021-07-13 16:48:22 708 [main] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@47a5b70d] was not registered for synchronization because synchronization is not active
+2021-07-13 16:48:22 816 [main] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [635610193, URL=jdbc:mariadb://127.0.0.1:3307/spring_db?useUnicode=true&charaterEncoding=utf-8&useSSL=false&serverTimezone=UTC, MariaDB Connector/J] will not be managed by Spring
+2021-07-13 16:48:22 821 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - ==>  Preparing: select * from users where userid=? 
+2021-07-13 16:48:22 853 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - ==> Parameters: spring(String)
+2021-07-13 16:48:22 889 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - <==      Total: 1
+2021-07-13 16:48:22 894 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@47a5b70d]
+2021-07-14 10:54:19 409 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2021-07-14 10:54:19 417 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\MyMapper.class]
+2021-07-14 10:54:19 417 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\StudentMapper.class]
+2021-07-14 10:54:19 418 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\UserMapper.class]
+2021-07-14 10:54:19 419 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'myMapper' and 'myspring.user.dao.mapper.MyMapper' mapperInterface
+2021-07-14 10:54:19 420 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'studentMapper' and 'myspring.user.dao.mapper.StudentMapper' mapperInterface
+2021-07-14 10:54:19 420 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'myspring.user.dao.mapper.UserMapper' mapperInterface
+2021-07-14 10:54:20 517 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2021-07-14 10:54:20 521 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [config/SqlMapConfig.xml]'
+2021-07-14 10:54:20 937 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\config\StudentMapper.xml]'
+2021-07-14 10:54:20 987 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\config\UserMapper.xml]'
+2021-07-14 10:54:21 476 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2021-07-14 10:54:21 482 [main] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@53ab0286] was not registered for synchronization because synchronization is not active
+2021-07-14 10:54:21 668 [main] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [1721180011, URL=jdbc:mariadb://127.0.0.1:3307/spring_db?useUnicode=true&charaterEncoding=utf-8&useSSL=false&serverTimezone=UTC, MariaDB Connector/J] will not be managed by Spring
+2021-07-14 10:54:21 674 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - ==>  Preparing: select * from users where userid=? 
+2021-07-14 10:54:21 696 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - ==> Parameters: spring(String)
+2021-07-14 10:54:21 717 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - <==      Total: 1
+2021-07-14 10:54:21 721 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@53ab0286]
+2021-07-14 10:54:48 532 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2021-07-14 10:54:48 612 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\MyMapper.class]
+2021-07-14 10:54:48 617 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\StudentMapper.class]
+2021-07-14 10:54:48 631 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\UserMapper.class]
+2021-07-14 10:54:48 651 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'myMapper' and 'myspring.user.dao.mapper.MyMapper' mapperInterface
+2021-07-14 10:54:48 656 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'studentMapper' and 'myspring.user.dao.mapper.StudentMapper' mapperInterface
+2021-07-14 10:54:48 657 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'myspring.user.dao.mapper.UserMapper' mapperInterface
+2021-07-14 10:54:49 541 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2021-07-14 10:54:49 544 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [config/SqlMapConfig.xml]'
+2021-07-14 10:54:49 678 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\config\StudentMapper.xml]'
+2021-07-14 10:54:49 709 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\config\UserMapper.xml]'
+2021-07-14 10:54:50 000 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2021-07-14 10:54:50 047 [main] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@53ab0286] was not registered for synchronization because synchronization is not active
+2021-07-14 10:54:50 302 [main] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [1721180011, URL=jdbc:mariadb://127.0.0.1:3307/spring_db?useUnicode=true&charaterEncoding=utf-8&useSSL=false&serverTimezone=UTC, MariaDB Connector/J] will not be managed by Spring
+2021-07-14 10:54:50 321 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - ==>  Preparing: select * from users where userid=? 
+2021-07-14 10:54:50 372 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - ==> Parameters: spring(String)
+2021-07-14 10:54:50 387 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - <==      Total: 1
+2021-07-14 10:54:50 391 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@53ab0286]
+2021-07-14 10:55:42 478 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2021-07-14 10:55:42 486 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\MyMapper.class]
+2021-07-14 10:55:42 487 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\StudentMapper.class]
+2021-07-14 10:55:42 488 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\UserMapper.class]
+2021-07-14 10:55:42 491 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'myMapper' and 'myspring.user.dao.mapper.MyMapper' mapperInterface
+2021-07-14 10:55:42 492 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'studentMapper' and 'myspring.user.dao.mapper.StudentMapper' mapperInterface
+2021-07-14 10:55:42 493 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'myspring.user.dao.mapper.UserMapper' mapperInterface
+2021-07-14 10:55:43 100 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2021-07-14 10:55:43 105 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [config/SqlMapConfig.xml]'
+2021-07-14 10:55:43 232 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\config\StudentMapper.xml]'
+2021-07-14 10:55:43 258 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\config\UserMapper.xml]'
+2021-07-14 10:55:43 436 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2021-07-14 10:55:43 446 [main] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@53ab0286] was not registered for synchronization because synchronization is not active
+2021-07-14 10:55:43 578 [main] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [1721180011, URL=jdbc:mariadb://127.0.0.1:3307/spring_db?useUnicode=true&charaterEncoding=utf-8&useSSL=false&serverTimezone=UTC, MariaDB Connector/J] will not be managed by Spring
+2021-07-14 10:55:43 584 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - ==>  Preparing: select * from users where userid=? 
+2021-07-14 10:55:43 609 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - ==> Parameters: spring(String)
+2021-07-14 10:55:43 627 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - <==      Total: 1
+2021-07-14 10:55:43 631 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@53ab0286]
+2021-07-14 10:55:57 238 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2021-07-14 10:55:57 294 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\MyMapper.class]
+2021-07-14 10:55:57 295 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\StudentMapper.class]
+2021-07-14 10:55:57 295 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\UserMapper.class]
+2021-07-14 10:55:57 297 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'myMapper' and 'myspring.user.dao.mapper.MyMapper' mapperInterface
+2021-07-14 10:55:57 298 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'studentMapper' and 'myspring.user.dao.mapper.StudentMapper' mapperInterface
+2021-07-14 10:55:57 298 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'myspring.user.dao.mapper.UserMapper' mapperInterface
+2021-07-14 10:55:59 258 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2021-07-14 10:55:59 264 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [config/SqlMapConfig.xml]'
+2021-07-14 10:55:59 403 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\config\StudentMapper.xml]'
+2021-07-14 10:55:59 416 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\config\UserMapper.xml]'
+2021-07-14 10:55:59 632 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2021-07-14 10:55:59 646 [main] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63c5efee] was not registered for synchronization because synchronization is not active
+2021-07-14 10:55:59 798 [main] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [1349025531, URL=jdbc:mariadb://127.0.0.1:3307/spring_db?useUnicode=true&charaterEncoding=utf-8&useSSL=false&serverTimezone=UTC, MariaDB Connector/J] will not be managed by Spring
+2021-07-14 10:55:59 812 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - ==>  Preparing: select * from users where userid=? 
+2021-07-14 10:55:59 857 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - ==> Parameters: spring(String)
+2021-07-14 10:55:59 886 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - <==      Total: 1
+2021-07-14 10:55:59 894 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63c5efee]
+2021-07-14 10:56:18 645 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2021-07-14 10:56:18 654 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\MyMapper.class]
+2021-07-14 10:56:18 655 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\StudentMapper.class]
+2021-07-14 10:56:18 656 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\UserMapper.class]
+2021-07-14 10:56:18 657 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'myMapper' and 'myspring.user.dao.mapper.MyMapper' mapperInterface
+2021-07-14 10:56:18 658 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'studentMapper' and 'myspring.user.dao.mapper.StudentMapper' mapperInterface
+2021-07-14 10:56:18 658 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'myspring.user.dao.mapper.UserMapper' mapperInterface
+2021-07-14 10:56:19 522 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2021-07-14 10:56:19 525 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [config/SqlMapConfig.xml]'
+2021-07-14 10:56:19 679 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\config\StudentMapper.xml]'
+2021-07-14 10:56:19 691 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\config\UserMapper.xml]'
+2021-07-14 10:56:19 968 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2021-07-14 10:56:19 973 [main] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@53ab0286] was not registered for synchronization because synchronization is not active
+2021-07-14 10:56:20 173 [main] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [1721180011, URL=jdbc:mariadb://127.0.0.1:3307/spring_db?useUnicode=true&charaterEncoding=utf-8&useSSL=false&serverTimezone=UTC, MariaDB Connector/J] will not be managed by Spring
+2021-07-14 10:56:20 179 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - ==>  Preparing: select * from users where userid=? 
+2021-07-14 10:56:20 206 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - ==> Parameters: spring(String)
+2021-07-14 10:56:20 237 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - <==      Total: 1
+2021-07-14 10:56:20 259 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@53ab0286]
+2021-07-14 11:10:48 801 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2021-07-14 11:10:48 807 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\MyMapper.class]
+2021-07-14 11:10:48 808 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\StudentMapper.class]
+2021-07-14 11:10:48 808 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\UserMapper.class]
+2021-07-14 11:10:48 810 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'myMapper' and 'myspring.user.dao.mapper.MyMapper' mapperInterface
+2021-07-14 11:10:48 810 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'studentMapper' and 'myspring.user.dao.mapper.StudentMapper' mapperInterface
+2021-07-14 11:10:48 810 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'myspring.user.dao.mapper.UserMapper' mapperInterface
+2021-07-14 11:10:49 572 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2021-07-14 11:10:49 575 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [config/SqlMapConfig.xml]'
+2021-07-14 11:10:49 677 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\config\StudentMapper.xml]'
+2021-07-14 11:10:49 697 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\config\UserMapper.xml]'
+2021-07-14 11:10:50 020 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ getUser ] 메서드 실행 전처리 수행
+2021-07-14 11:10:50 021 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ getUser ] 아규먼트 spring
+2021-07-14 11:10:50 022 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ read ] 메서드 실행 전처리 수행
+2021-07-14 11:10:50 022 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ read ] 아규먼트 spring
+2021-07-14 11:10:50 022 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ selectUserById ] 메서드 실행 전처리 수행
+2021-07-14 11:10:50 022 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ selectUserById ] 아규먼트 spring
+2021-07-14 11:10:50 033 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2021-07-14 11:10:50 048 [main] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@523424b5] was not registered for synchronization because synchronization is not active
+2021-07-14 11:10:50 219 [main] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [1611221523, URL=jdbc:mariadb://127.0.0.1:3307/spring_db?useUnicode=true&charaterEncoding=utf-8&useSSL=false&serverTimezone=UTC, MariaDB Connector/J] will not be managed by Spring
+2021-07-14 11:10:50 224 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - ==>  Preparing: select * from users where userid=? 
+2021-07-14 11:10:50 249 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - ==> Parameters: spring(String)
+2021-07-14 11:10:50 268 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - <==      Total: 1
+2021-07-14 11:10:50 272 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@523424b5]
+2021-07-14 11:10:50 274 [main] DEBUG myspring.aop.annot.LoggingAspect - @AfterReturing [ getUser ] 메서드 실행 후처리 수행
+2021-07-14 11:10:50 275 [main] DEBUG myspring.aop.annot.LoggingAspect - @AfterReturing [ getUser ] 리턴값=UserVO [id=3, userId=spring, name=스프링, gender=남, city=경기]
+2021-07-14 11:10:50 275 [main] DEBUG myspring.aop.annot.LoggingAspect - @After [ getUser ] 메서드 실행 완료
+2021-07-14 11:13:11 847 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2021-07-14 11:13:11 882 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\MyMapper.class]
+2021-07-14 11:13:11 883 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\StudentMapper.class]
+2021-07-14 11:13:11 884 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\UserMapper.class]
+2021-07-14 11:13:11 886 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'myMapper' and 'myspring.user.dao.mapper.MyMapper' mapperInterface
+2021-07-14 11:13:11 886 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'studentMapper' and 'myspring.user.dao.mapper.StudentMapper' mapperInterface
+2021-07-14 11:13:11 886 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'myspring.user.dao.mapper.UserMapper' mapperInterface
+2021-07-14 11:13:15 714 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2021-07-14 11:13:15 730 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [config/SqlMapConfig.xml]'
+2021-07-14 11:13:16 620 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\config\StudentMapper.xml]'
+2021-07-14 11:13:16 717 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\config\UserMapper.xml]'
+2021-07-14 11:13:18 684 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ getUser ] 메서드 실행 전처리 수행
+2021-07-14 11:13:18 685 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ getUser ] 아규먼트 spring
+2021-07-14 11:13:18 686 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ read ] 메서드 실행 전처리 수행
+2021-07-14 11:13:18 687 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ read ] 아규먼트 spring
+2021-07-14 11:13:18 692 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ selectUserById ] 메서드 실행 전처리 수행
+2021-07-14 11:13:18 697 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ selectUserById ] 아규먼트 spring
+2021-07-14 11:13:18 808 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2021-07-14 11:13:18 936 [main] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@523424b5] was not registered for synchronization because synchronization is not active
+2021-07-14 11:13:19 387 [main] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [1611221523, URL=jdbc:mariadb://127.0.0.1:3307/spring_db?useUnicode=true&charaterEncoding=utf-8&useSSL=false&serverTimezone=UTC, MariaDB Connector/J] will not be managed by Spring
+2021-07-14 11:13:19 395 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - ==>  Preparing: select * from users where userid1=? 
+2021-07-14 11:13:19 415 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - ==> Parameters: spring(String)
+2021-07-14 11:13:19 422 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@523424b5]
+2021-07-14 11:13:19 567 [main] DEBUG myspring.aop.annot.LoggingAspect - @AfterThrowing [ getUser ] 메서드 실행 중 예외 발생
+2021-07-14 11:13:19 568 [main] DEBUG myspring.aop.annot.LoggingAspect - @AfterThrowing [ getUser ] 예외=
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: (conn=38) Unknown column 'userid1' in 'where clause'
+### The error may exist in file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\config\UserMapper.xml]
+### The error may involve myspring.user.dao.mapper.UserMapper.selectUserById-Inline
+### The error occurred while setting parameters
+### SQL: select * from users where userid1=?
+### Cause: java.sql.SQLSyntaxErrorException: (conn=38) Unknown column 'userid1' in 'where clause'
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: (conn=38) Unknown column 'userid1' in 'where clause'
+2021-07-14 11:13:19 569 [main] DEBUG myspring.aop.annot.LoggingAspect - @After [ getUser ] 메서드 실행 완료
+2021-07-14 11:14:29 696 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2021-07-14 11:14:29 705 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\MyMapper.class]
+2021-07-14 11:14:29 706 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\StudentMapper.class]
+2021-07-14 11:14:29 706 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\UserMapper.class]
+2021-07-14 11:14:29 708 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'myMapper' and 'myspring.user.dao.mapper.MyMapper' mapperInterface
+2021-07-14 11:14:29 708 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'studentMapper' and 'myspring.user.dao.mapper.StudentMapper' mapperInterface
+2021-07-14 11:14:29 708 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'myspring.user.dao.mapper.UserMapper' mapperInterface
+2021-07-14 11:14:30 517 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2021-07-14 11:14:30 520 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [config/SqlMapConfig.xml]'
+2021-07-14 11:14:30 626 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\config\StudentMapper.xml]'
+2021-07-14 11:14:30 664 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\config\UserMapper.xml]'
+2021-07-14 11:14:32 016 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ getUser ] 메서드 실행 전처리 수행
+2021-07-14 11:14:32 027 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ getUser ] 아규먼트 spring
+2021-07-14 11:14:32 033 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ read ] 메서드 실행 전처리 수행
+2021-07-14 11:14:32 038 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ read ] 아규먼트 spring
+2021-07-14 11:14:32 041 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ selectUserById ] 메서드 실행 전처리 수행
+2021-07-14 11:14:32 042 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ selectUserById ] 아규먼트 spring
+2021-07-14 11:14:32 118 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2021-07-14 11:14:32 209 [main] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@523424b5] was not registered for synchronization because synchronization is not active
+2021-07-14 11:14:33 076 [main] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [1611221523, URL=jdbc:mariadb://127.0.0.1:3307/spring_db?useUnicode=true&charaterEncoding=utf-8&useSSL=false&serverTimezone=UTC, MariaDB Connector/J] will not be managed by Spring
+2021-07-14 11:14:33 090 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - ==>  Preparing: select * from users where userid=? 
+2021-07-14 11:14:33 135 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - ==> Parameters: spring(String)
+2021-07-14 11:14:33 174 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - <==      Total: 1
+2021-07-14 11:14:33 180 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@523424b5]
+2021-07-14 11:14:33 185 [main] DEBUG myspring.aop.annot.LoggingAspect - @AfterReturing [ getUser ] 메서드 실행 후처리 수행
+2021-07-14 11:14:33 186 [main] DEBUG myspring.aop.annot.LoggingAspect - @AfterReturing [ getUser ] 리턴값=UserVO [id=3, userId=spring, name=스프링, gender=남, city=경기]
+2021-07-14 11:14:33 186 [main] DEBUG myspring.aop.annot.LoggingAspect - @After [ getUser ] 메서드 실행 완료
+2021-07-14 12:11:19 961 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2021-07-14 12:11:19 993 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\MyMapper.class]
+2021-07-14 12:11:19 994 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\StudentMapper.class]
+2021-07-14 12:11:19 995 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\UserMapper.class]
+2021-07-14 12:11:19 997 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'myMapper' and 'myspring.user.dao.mapper.MyMapper' mapperInterface
+2021-07-14 12:11:19 998 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'studentMapper' and 'myspring.user.dao.mapper.StudentMapper' mapperInterface
+2021-07-14 12:11:20 000 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'myspring.user.dao.mapper.UserMapper' mapperInterface
+2021-07-14 12:11:23 702 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2021-07-14 12:11:23 714 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [config/SqlMapConfig.xml]'
+2021-07-14 12:11:24 478 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\config\StudentMapper.xml]'
+2021-07-14 12:11:24 606 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\config\UserMapper.xml]'
+2021-07-14 12:11:26 870 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ getUser ] 메서드 실행 전처리 수행
+2021-07-14 12:11:26 871 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ getUser ] 아규먼트 spring
+2021-07-14 12:11:26 874 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ read ] 메서드 실행 전처리 수행
+2021-07-14 12:11:26 876 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ read ] 아규먼트 spring
+2021-07-14 12:11:26 879 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ selectUserById ] 메서드 실행 전처리 수행
+2021-07-14 12:11:26 884 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ selectUserById ] 아규먼트 spring
+2021-07-14 12:11:26 948 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2021-07-14 12:11:27 003 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2ca65ce4]
+2021-07-14 12:11:27 175 [main] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [1086323658, URL=jdbc:mariadb://127.0.0.1:3307/spring_db?useUnicode=true&charaterEncoding=utf-8&useSSL=false&serverTimezone=UTC, MariaDB Connector/J] will be managed by Spring
+2021-07-14 12:11:27 253 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - ==>  Preparing: select * from users where userid=? 
+2021-07-14 12:11:27 370 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - ==> Parameters: spring(String)
+2021-07-14 12:11:27 553 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - <==      Total: 1
+2021-07-14 12:11:27 580 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2ca65ce4]
+2021-07-14 12:11:27 588 [main] DEBUG myspring.aop.annot.LoggingAspect - @AfterReturing [ getUser ] 메서드 실행 후처리 수행
+2021-07-14 12:11:27 591 [main] DEBUG myspring.aop.annot.LoggingAspect - @AfterReturing [ getUser ] 리턴값=UserVO [id=3, userId=spring, name=스프링, gender=남, city=경기]
+2021-07-14 12:11:27 601 [main] DEBUG myspring.aop.annot.LoggingAspect - @After [ getUser ] 메서드 실행 완료
+2021-07-14 12:11:27 603 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2ca65ce4]
+2021-07-14 12:11:27 605 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2ca65ce4]
+2021-07-14 12:11:27 607 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2ca65ce4]
+2021-07-14 12:11:27 622 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ updateUser ] 메서드 실행 전처리 수행
+2021-07-14 12:11:27 624 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ updateUser ] 아규먼트 UserVO [id=null, userId=spring, name=스프링변경, gender=여, city=제주]
+2021-07-14 12:11:27 635 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ update ] 메서드 실행 전처리 수행
+2021-07-14 12:11:27 636 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ update ] 아규먼트 UserVO [id=null, userId=spring, name=스프링변경, gender=여, city=제주]
+2021-07-14 12:11:27 638 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ updateUser ] 메서드 실행 전처리 수행
+2021-07-14 12:11:27 639 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ updateUser ] 아규먼트 UserVO [id=null, userId=spring, name=스프링변경, gender=여, city=제주]
+2021-07-14 12:11:27 640 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2021-07-14 12:11:27 640 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@402f80f5]
+2021-07-14 12:11:27 675 [main] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [553821397, URL=jdbc:mariadb://127.0.0.1:3307/spring_db?useUnicode=true&charaterEncoding=utf-8&useSSL=false&serverTimezone=UTC, MariaDB Connector/J] will be managed by Spring
+2021-07-14 12:11:27 680 [main] DEBUG myspring.user.dao.mapper.UserMapper.updateUser - ==>  Preparing: update users set name = ?, gender = ?, city = ? where userid = ? 
+2021-07-14 12:11:27 686 [main] DEBUG myspring.user.dao.mapper.UserMapper.updateUser - ==> Parameters: 스프링변경(String), 여(String), 제주(String), spring(String)
+2021-07-14 12:11:27 713 [main] DEBUG myspring.user.dao.mapper.UserMapper.updateUser - <==    Updates: 1
+2021-07-14 12:11:27 721 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@402f80f5]
+2021-07-14 12:11:27 723 [main] DEBUG myspring.aop.annot.LoggingAspect - @After [ updateUser ] 메서드 실행 완료
+2021-07-14 12:11:27 724 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@402f80f5]
+2021-07-14 12:11:27 725 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@402f80f5]
+2021-07-14 12:11:27 735 [main] DEBUG myspring.aop.annot.LoggingAspect - @AfterReturing [ updateUser ] 메서드 실행 후처리 수행
+2021-07-14 12:11:27 736 [main] DEBUG myspring.aop.annot.LoggingAspect - @AfterReturing [ updateUser ] 리턴값=null
+2021-07-14 12:11:27 737 [main] DEBUG myspring.aop.annot.LoggingAspect - @After [ updateUser ] 메서드 실행 완료
+2021-07-14 12:11:27 751 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ getUser ] 메서드 실행 전처리 수행
+2021-07-14 12:11:27 754 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ getUser ] 아규먼트 spring
+2021-07-14 12:11:27 756 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ read ] 메서드 실행 전처리 수행
+2021-07-14 12:11:27 756 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ read ] 아규먼트 spring
+2021-07-14 12:11:27 756 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ selectUserById ] 메서드 실행 전처리 수행
+2021-07-14 12:11:27 759 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ selectUserById ] 아규먼트 spring
+2021-07-14 12:11:27 760 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2021-07-14 12:11:27 761 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@210386e0]
+2021-07-14 12:11:27 763 [main] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [1710783020, URL=jdbc:mariadb://127.0.0.1:3307/spring_db?useUnicode=true&charaterEncoding=utf-8&useSSL=false&serverTimezone=UTC, MariaDB Connector/J] will be managed by Spring
+2021-07-14 12:11:27 767 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - ==>  Preparing: select * from users where userid=? 
+2021-07-14 12:11:27 785 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - ==> Parameters: spring(String)
+2021-07-14 12:11:27 789 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - <==      Total: 1
+2021-07-14 12:11:27 791 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@210386e0]
+2021-07-14 12:11:27 792 [main] DEBUG myspring.aop.annot.LoggingAspect - @AfterReturing [ getUser ] 메서드 실행 후처리 수행
+2021-07-14 12:11:27 792 [main] DEBUG myspring.aop.annot.LoggingAspect - @AfterReturing [ getUser ] 리턴값=UserVO [id=3, userId=spring, name=스프링변경, gender=여, city=제주]
+2021-07-14 12:11:27 793 [main] DEBUG myspring.aop.annot.LoggingAspect - @After [ getUser ] 메서드 실행 완료
+2021-07-14 12:11:27 793 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@210386e0]
+2021-07-14 12:11:27 794 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@210386e0]
+2021-07-14 12:11:27 794 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@210386e0]
+2021-07-14 12:14:13 688 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2021-07-14 12:14:13 754 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\MyMapper.class]
+2021-07-14 12:14:13 756 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\StudentMapper.class]
+2021-07-14 12:14:13 758 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\UserMapper.class]
+2021-07-14 12:14:13 772 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'myMapper' and 'myspring.user.dao.mapper.MyMapper' mapperInterface
+2021-07-14 12:14:13 780 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'studentMapper' and 'myspring.user.dao.mapper.StudentMapper' mapperInterface
+2021-07-14 12:14:13 781 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'myspring.user.dao.mapper.UserMapper' mapperInterface
+2021-07-14 12:14:19 326 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2021-07-14 12:14:19 345 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [config/SqlMapConfig.xml]'
+2021-07-14 12:14:19 953 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\config\StudentMapper.xml]'
+2021-07-14 12:14:20 005 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\config\UserMapper.xml]'
+2021-07-14 12:14:21 235 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ getUser ] 메서드 실행 전처리 수행
+2021-07-14 12:14:21 236 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ getUser ] 아규먼트 spring
+2021-07-14 12:14:21 236 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ read ] 메서드 실행 전처리 수행
+2021-07-14 12:14:21 237 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ read ] 아규먼트 spring
+2021-07-14 12:14:21 237 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ selectUserById ] 메서드 실행 전처리 수행
+2021-07-14 12:14:21 237 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ selectUserById ] 아규먼트 spring
+2021-07-14 12:14:21 245 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2021-07-14 12:14:21 253 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@158d255c]
+2021-07-14 12:14:21 268 [main] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [94682872, URL=jdbc:mariadb://127.0.0.1:3307/spring_db?useUnicode=true&charaterEncoding=utf-8&useSSL=false&serverTimezone=UTC, MariaDB Connector/J] will be managed by Spring
+2021-07-14 12:14:21 274 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - ==>  Preparing: select * from users where userid=? 
+2021-07-14 12:14:21 305 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - ==> Parameters: spring(String)
+2021-07-14 12:14:21 357 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - <==      Total: 1
+2021-07-14 12:14:21 368 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@158d255c]
+2021-07-14 12:14:21 371 [main] DEBUG myspring.aop.annot.LoggingAspect - @AfterReturing [ getUser ] 메서드 실행 후처리 수행
+2021-07-14 12:14:21 372 [main] DEBUG myspring.aop.annot.LoggingAspect - @AfterReturing [ getUser ] 리턴값=UserVO [id=3, userId=spring, name=스프링변경, gender=여, city=제주]
+2021-07-14 12:14:21 373 [main] DEBUG myspring.aop.annot.LoggingAspect - @After [ getUser ] 메서드 실행 완료
+2021-07-14 12:14:21 375 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@158d255c]
+2021-07-14 12:14:21 381 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@158d255c]
+2021-07-14 12:14:21 383 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@158d255c]
+2021-07-14 12:14:21 420 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ updateUser ] 메서드 실행 전처리 수행
+2021-07-14 12:14:21 423 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ updateUser ] 아규먼트 UserVO [id=null, userId=spring, name=스프링변경, gender=여, city=제주]
+2021-07-14 12:14:21 430 [main] DEBUG myspring.aop.annot.LoggingAspect - @AfterThrowing [ updateUser ] 메서드 실행 중 예외 발생
+2021-07-14 12:14:21 434 [main] DEBUG myspring.aop.annot.LoggingAspect - @AfterThrowing [ updateUser ] 예외=No existing transaction found for transaction marked with propagation 'mandatory'
+2021-07-14 12:14:21 437 [main] DEBUG myspring.aop.annot.LoggingAspect - @After [ updateUser ] 메서드 실행 완료
+2021-07-14 12:15:33 996 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2021-07-14 12:15:34 002 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\MyMapper.class]
+2021-07-14 12:15:34 003 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\StudentMapper.class]
+2021-07-14 12:15:34 003 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\UserMapper.class]
+2021-07-14 12:15:34 004 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'myMapper' and 'myspring.user.dao.mapper.MyMapper' mapperInterface
+2021-07-14 12:15:34 005 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'studentMapper' and 'myspring.user.dao.mapper.StudentMapper' mapperInterface
+2021-07-14 12:15:34 005 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'myspring.user.dao.mapper.UserMapper' mapperInterface
+2021-07-14 12:15:34 823 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2021-07-14 12:15:34 825 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [config/SqlMapConfig.xml]'
+2021-07-14 12:15:35 386 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\config\StudentMapper.xml]'
+2021-07-14 12:15:35 485 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\config\UserMapper.xml]'
+2021-07-14 12:15:36 947 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ getUser ] 메서드 실행 전처리 수행
+2021-07-14 12:15:36 947 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ getUser ] 아규먼트 spring
+2021-07-14 12:15:36 948 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ read ] 메서드 실행 전처리 수행
+2021-07-14 12:15:36 948 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ read ] 아규먼트 spring
+2021-07-14 12:15:36 948 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ selectUserById ] 메서드 실행 전처리 수행
+2021-07-14 12:15:36 949 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ selectUserById ] 아규먼트 spring
+2021-07-14 12:15:36 955 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2021-07-14 12:15:36 960 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@158d255c]
+2021-07-14 12:15:36 983 [main] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [94682872, URL=jdbc:mariadb://127.0.0.1:3307/spring_db?useUnicode=true&charaterEncoding=utf-8&useSSL=false&serverTimezone=UTC, MariaDB Connector/J] will be managed by Spring
+2021-07-14 12:15:37 032 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - ==>  Preparing: select * from users where userid=? 
+2021-07-14 12:15:37 206 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - ==> Parameters: spring(String)
+2021-07-14 12:15:37 324 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - <==      Total: 1
+2021-07-14 12:15:37 348 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@158d255c]
+2021-07-14 12:15:37 354 [main] DEBUG myspring.aop.annot.LoggingAspect - @AfterReturing [ getUser ] 메서드 실행 후처리 수행
+2021-07-14 12:15:37 356 [main] DEBUG myspring.aop.annot.LoggingAspect - @AfterReturing [ getUser ] 리턴값=UserVO [id=3, userId=spring, name=스프링변경, gender=여, city=제주]
+2021-07-14 12:15:37 357 [main] DEBUG myspring.aop.annot.LoggingAspect - @After [ getUser ] 메서드 실행 완료
+2021-07-14 12:15:37 360 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@158d255c]
+2021-07-14 12:15:37 367 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@158d255c]
+2021-07-14 12:15:37 371 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@158d255c]
+2021-07-14 12:15:37 377 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ updateUser ] 메서드 실행 전처리 수행
+2021-07-14 12:15:37 378 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ updateUser ] 아규먼트 UserVO [id=null, userId=spring, name=스프링변경, gender=여, city=제주]
+2021-07-14 12:15:37 383 [main] DEBUG myspring.aop.annot.LoggingAspect - @AfterThrowing [ updateUser ] 메서드 실행 중 예외 발생
+2021-07-14 12:15:37 388 [main] DEBUG myspring.aop.annot.LoggingAspect - @AfterThrowing [ updateUser ] 예외=No existing transaction found for transaction marked with propagation 'mandatory'
+2021-07-14 12:15:37 393 [main] DEBUG myspring.aop.annot.LoggingAspect - @After [ updateUser ] 메서드 실행 완료
+2021-07-14 14:36:43 562 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2021-07-14 14:36:43 576 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\MyMapper.class]
+2021-07-14 14:36:43 577 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\StudentMapper.class]
+2021-07-14 14:36:43 578 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\UserMapper.class]
+2021-07-14 14:36:43 579 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'myMapper' and 'myspring.user.dao.mapper.MyMapper' mapperInterface
+2021-07-14 14:36:43 580 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'studentMapper' and 'myspring.user.dao.mapper.StudentMapper' mapperInterface
+2021-07-14 14:36:43 580 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'myspring.user.dao.mapper.UserMapper' mapperInterface
+2021-07-14 14:36:44 430 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2021-07-14 14:36:44 432 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [config/SqlMapConfig.xml]'
+2021-07-14 14:36:44 530 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\config\StudentMapper.xml]'
+2021-07-14 14:36:44 545 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\config\UserMapper.xml]'
+2021-07-14 14:36:45 107 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ getUser ] 메서드 실행 전처리 수행
+2021-07-14 14:36:45 108 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ getUser ] 아규먼트 spring
+2021-07-14 14:36:45 108 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ read ] 메서드 실행 전처리 수행
+2021-07-14 14:36:45 109 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ read ] 아규먼트 spring
+2021-07-14 14:36:45 110 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ selectUserById ] 메서드 실행 전처리 수행
+2021-07-14 14:36:45 111 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ selectUserById ] 아규먼트 spring
+2021-07-14 14:36:45 125 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2021-07-14 14:36:45 138 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24be2d9c]
+2021-07-14 14:36:45 172 [main] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [347808407, URL=jdbc:mariadb://127.0.0.1:3307/spring_db?useUnicode=true&charaterEncoding=utf-8&useSSL=false&serverTimezone=UTC, MariaDB Connector/J] will be managed by Spring
+2021-07-14 14:36:45 180 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - ==>  Preparing: select * from users where userid=? 
+2021-07-14 14:36:45 209 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - ==> Parameters: spring(String)
+2021-07-14 14:36:45 245 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - <==      Total: 1
+2021-07-14 14:36:45 252 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24be2d9c]
+2021-07-14 14:36:45 252 [main] DEBUG myspring.aop.annot.LoggingAspect - @AfterReturing [ getUser ] 메서드 실행 후처리 수행
+2021-07-14 14:36:45 253 [main] DEBUG myspring.aop.annot.LoggingAspect - @AfterReturing [ getUser ] 리턴값=UserVO [id=3, userId=spring, name=스프링변경, gender=여, city=제주]
+2021-07-14 14:36:45 253 [main] DEBUG myspring.aop.annot.LoggingAspect - @After [ getUser ] 메서드 실행 완료
+2021-07-14 14:36:45 254 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24be2d9c]
+2021-07-14 14:36:45 256 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24be2d9c]
+2021-07-14 14:36:45 258 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24be2d9c]
+2021-07-14 14:36:45 265 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ updateUser ] 메서드 실행 전처리 수행
+2021-07-14 14:36:45 266 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ updateUser ] 아규먼트 UserVO [id=null, userId=spring, name=스프링변경, gender=여, city=제주]
+2021-07-14 14:36:45 269 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ update ] 메서드 실행 전처리 수행
+2021-07-14 14:36:45 269 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ update ] 아규먼트 UserVO [id=null, userId=spring, name=스프링변경, gender=여, city=제주]
+2021-07-14 14:36:45 270 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ updateUser ] 메서드 실행 전처리 수행
+2021-07-14 14:36:45 270 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ updateUser ] 아규먼트 UserVO [id=null, userId=spring, name=스프링변경, gender=여, city=제주]
+2021-07-14 14:36:45 271 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2021-07-14 14:36:45 271 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@372b0d86]
+2021-07-14 14:36:45 279 [main] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [540092563, URL=jdbc:mariadb://127.0.0.1:3307/spring_db?useUnicode=true&charaterEncoding=utf-8&useSSL=false&serverTimezone=UTC, MariaDB Connector/J] will be managed by Spring
+2021-07-14 14:36:45 280 [main] DEBUG myspring.user.dao.mapper.UserMapper.updateUser - ==>  Preparing: update users set name = ?, gender = ?, city = ? where userid = ? 
+2021-07-14 14:36:45 281 [main] DEBUG myspring.user.dao.mapper.UserMapper.updateUser - ==> Parameters: 스프링변경(String), 여(String), 제주(String), spring(String)
+2021-07-14 14:36:45 283 [main] DEBUG myspring.user.dao.mapper.UserMapper.updateUser - <==    Updates: 1
+2021-07-14 14:36:45 284 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@372b0d86]
+2021-07-14 14:36:45 285 [main] DEBUG myspring.aop.annot.LoggingAspect - @After [ updateUser ] 메서드 실행 완료
+2021-07-14 14:36:45 285 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@372b0d86]
+2021-07-14 14:36:45 285 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@372b0d86]
+2021-07-14 14:36:45 289 [main] DEBUG myspring.aop.annot.LoggingAspect - @AfterReturing [ updateUser ] 메서드 실행 후처리 수행
+2021-07-14 14:36:45 289 [main] DEBUG myspring.aop.annot.LoggingAspect - @AfterReturing [ updateUser ] 리턴값=null
+2021-07-14 14:36:45 290 [main] DEBUG myspring.aop.annot.LoggingAspect - @After [ updateUser ] 메서드 실행 완료
+2021-07-14 14:36:45 291 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ getUser ] 메서드 실행 전처리 수행
+2021-07-14 14:36:45 291 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ getUser ] 아규먼트 spring
+2021-07-14 14:36:45 291 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ read ] 메서드 실행 전처리 수행
+2021-07-14 14:36:45 292 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ read ] 아규먼트 spring
+2021-07-14 14:36:45 292 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ selectUserById ] 메서드 실행 전처리 수행
+2021-07-14 14:36:45 292 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ selectUserById ] 아규먼트 spring
+2021-07-14 14:36:45 292 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2021-07-14 14:36:45 292 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@70eecdc2]
+2021-07-14 14:36:45 293 [main] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [2108708444, URL=jdbc:mariadb://127.0.0.1:3307/spring_db?useUnicode=true&charaterEncoding=utf-8&useSSL=false&serverTimezone=UTC, MariaDB Connector/J] will be managed by Spring
+2021-07-14 14:36:45 293 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - ==>  Preparing: select * from users where userid=? 
+2021-07-14 14:36:45 294 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - ==> Parameters: spring(String)
+2021-07-14 14:36:45 296 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - <==      Total: 1
+2021-07-14 14:36:45 297 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@70eecdc2]
+2021-07-14 14:36:45 297 [main] DEBUG myspring.aop.annot.LoggingAspect - @AfterReturing [ getUser ] 메서드 실행 후처리 수행
+2021-07-14 14:36:45 297 [main] DEBUG myspring.aop.annot.LoggingAspect - @AfterReturing [ getUser ] 리턴값=UserVO [id=3, userId=spring, name=스프링변경, gender=여, city=제주]
+2021-07-14 14:36:45 298 [main] DEBUG myspring.aop.annot.LoggingAspect - @After [ getUser ] 메서드 실행 완료
+2021-07-14 14:36:45 299 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@70eecdc2]
+2021-07-14 14:36:45 299 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@70eecdc2]
+2021-07-14 14:36:45 300 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@70eecdc2]
+2021-07-14 14:38:22 173 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2021-07-14 14:38:22 255 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\MyMapper.class]
+2021-07-14 14:38:22 259 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\StudentMapper.class]
+2021-07-14 14:38:22 261 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\UserMapper.class]
+2021-07-14 14:38:22 278 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'myMapper' and 'myspring.user.dao.mapper.MyMapper' mapperInterface
+2021-07-14 14:38:22 279 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'studentMapper' and 'myspring.user.dao.mapper.StudentMapper' mapperInterface
+2021-07-14 14:38:22 280 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'myspring.user.dao.mapper.UserMapper' mapperInterface
+2021-07-14 14:38:24 588 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2021-07-14 14:38:24 591 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [config/SqlMapConfig.xml]'
+2021-07-14 14:38:25 074 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\config\StudentMapper.xml]'
+2021-07-14 14:38:25 195 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\config\UserMapper.xml]'
+2021-07-14 14:38:27 002 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ getUser ] 메서드 실행 전처리 수행
+2021-07-14 14:38:27 003 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ getUser ] 아규먼트 spring
+2021-07-14 14:38:27 009 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ read ] 메서드 실행 전처리 수행
+2021-07-14 14:38:27 011 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ read ] 아규먼트 spring
+2021-07-14 14:38:27 018 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ selectUserById ] 메서드 실행 전처리 수행
+2021-07-14 14:38:27 023 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ selectUserById ] 아규먼트 spring
+2021-07-14 14:38:27 074 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2021-07-14 14:38:27 154 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13579834]
+2021-07-14 14:38:27 272 [main] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [1688150025, URL=jdbc:mariadb://127.0.0.1:3307/spring_db?useUnicode=true&charaterEncoding=utf-8&useSSL=false&serverTimezone=UTC, MariaDB Connector/J] will be managed by Spring
+2021-07-14 14:38:27 316 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - ==>  Preparing: select * from users where userid=? 
+2021-07-14 14:38:27 421 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - ==> Parameters: spring(String)
+2021-07-14 14:38:27 476 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - <==      Total: 1
+2021-07-14 14:38:27 512 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13579834]
+2021-07-14 14:38:27 514 [main] DEBUG myspring.aop.annot.LoggingAspect - @AfterReturing [ getUser ] 메서드 실행 후처리 수행
+2021-07-14 14:38:27 515 [main] DEBUG myspring.aop.annot.LoggingAspect - @AfterReturing [ getUser ] 리턴값=UserVO [id=3, userId=spring, name=스프링변경, gender=여, city=제주]
+2021-07-14 14:38:27 516 [main] DEBUG myspring.aop.annot.LoggingAspect - @After [ getUser ] 메서드 실행 완료
+2021-07-14 14:38:27 519 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13579834]
+2021-07-14 14:38:27 521 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13579834]
+2021-07-14 14:38:27 522 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13579834]
+2021-07-14 14:38:27 540 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ updateUser ] 메서드 실행 전처리 수행
+2021-07-14 14:38:27 541 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ updateUser ] 아규먼트 UserVO [id=null, userId=spring, name=스프링변경, gender=여, city=제주]
+2021-07-14 14:38:27 556 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ update ] 메서드 실행 전처리 수행
+2021-07-14 14:38:27 560 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ update ] 아규먼트 UserVO [id=null, userId=spring, name=스프링변경, gender=여, city=제주]
+2021-07-14 14:38:27 569 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ updateUser ] 메서드 실행 전처리 수행
+2021-07-14 14:38:27 574 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ updateUser ] 아규먼트 UserVO [id=null, userId=spring, name=스프링변경, gender=여, city=제주]
+2021-07-14 14:38:27 577 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2021-07-14 14:38:27 580 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@31c269fd]
+2021-07-14 14:38:27 601 [main] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [712732521, URL=jdbc:mariadb://127.0.0.1:3307/spring_db?useUnicode=true&charaterEncoding=utf-8&useSSL=false&serverTimezone=UTC, MariaDB Connector/J] will be managed by Spring
+2021-07-14 14:38:27 608 [main] DEBUG myspring.user.dao.mapper.UserMapper.updateUser - ==>  Preparing: update users set name = ?, gender = ?, city = ? where userid = ? 
+2021-07-14 14:38:27 609 [main] DEBUG myspring.user.dao.mapper.UserMapper.updateUser - ==> Parameters: 스프링변경(String), 여(String), 제주(String), spring(String)
+2021-07-14 14:38:27 611 [main] DEBUG myspring.user.dao.mapper.UserMapper.updateUser - <==    Updates: 1
+2021-07-14 14:38:27 613 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@31c269fd]
+2021-07-14 14:38:27 615 [main] DEBUG myspring.aop.annot.LoggingAspect - @After [ updateUser ] 메서드 실행 완료
+2021-07-14 14:38:27 620 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@31c269fd]
+2021-07-14 14:38:27 625 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@31c269fd]
+2021-07-14 14:38:27 633 [main] DEBUG myspring.aop.annot.LoggingAspect - @AfterReturing [ updateUser ] 메서드 실행 후처리 수행
+2021-07-14 14:38:27 634 [main] DEBUG myspring.aop.annot.LoggingAspect - @AfterReturing [ updateUser ] 리턴값=null
+2021-07-14 14:38:27 639 [main] DEBUG myspring.aop.annot.LoggingAspect - @After [ updateUser ] 메서드 실행 완료
+2021-07-14 14:38:27 649 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ getUser ] 메서드 실행 전처리 수행
+2021-07-14 14:38:27 650 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ getUser ] 아규먼트 spring
+2021-07-14 14:38:27 650 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ read ] 메서드 실행 전처리 수행
+2021-07-14 14:38:27 650 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ read ] 아규먼트 spring
+2021-07-14 14:38:27 651 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ selectUserById ] 메서드 실행 전처리 수행
+2021-07-14 14:38:27 652 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ selectUserById ] 아규먼트 spring
+2021-07-14 14:38:27 652 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2021-07-14 14:38:27 653 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@20312893]
+2021-07-14 14:38:27 654 [main] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [205615258, URL=jdbc:mariadb://127.0.0.1:3307/spring_db?useUnicode=true&charaterEncoding=utf-8&useSSL=false&serverTimezone=UTC, MariaDB Connector/J] will be managed by Spring
+2021-07-14 14:38:27 655 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - ==>  Preparing: select * from users where userid=? 
+2021-07-14 14:38:27 655 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - ==> Parameters: spring(String)
+2021-07-14 14:38:27 658 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - <==      Total: 1
+2021-07-14 14:38:27 660 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@20312893]
+2021-07-14 14:38:27 660 [main] DEBUG myspring.aop.annot.LoggingAspect - @AfterReturing [ getUser ] 메서드 실행 후처리 수행
+2021-07-14 14:38:27 660 [main] DEBUG myspring.aop.annot.LoggingAspect - @AfterReturing [ getUser ] 리턴값=UserVO [id=3, userId=spring, name=스프링변경, gender=여, city=제주]
+2021-07-14 14:38:27 661 [main] DEBUG myspring.aop.annot.LoggingAspect - @After [ getUser ] 메서드 실행 완료
+2021-07-14 14:38:27 663 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@20312893]
+2021-07-14 14:38:27 664 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@20312893]
+2021-07-14 14:38:27 665 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@20312893]
+2021-07-14 15:01:33 552 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2021-07-14 15:01:33 563 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\MyMapper.class]
+2021-07-14 15:01:33 564 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\StudentMapper.class]
+2021-07-14 15:01:33 564 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\myspring\user\dao\mapper\UserMapper.class]
+2021-07-14 15:01:33 567 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'myMapper' and 'myspring.user.dao.mapper.MyMapper' mapperInterface
+2021-07-14 15:01:33 568 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'studentMapper' and 'myspring.user.dao.mapper.StudentMapper' mapperInterface
+2021-07-14 15:01:33 568 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'myspring.user.dao.mapper.UserMapper' mapperInterface
+2021-07-14 15:01:35 416 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2021-07-14 15:01:35 430 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [config/SqlMapConfig.xml]'
+2021-07-14 15:01:35 662 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\config\StudentMapper.xml]'
+2021-07-14 15:01:35 676 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\spring_fw\workspace\MySpringWebProjectVer2\target\classes\config\UserMapper.xml]'
+2021-07-14 15:01:36 139 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ getUser ] 메서드 실행 전처리 수행
+2021-07-14 15:01:36 139 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ getUser ] 아규먼트 spring
+2021-07-14 15:01:36 139 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ read ] 메서드 실행 전처리 수행
+2021-07-14 15:01:36 140 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ read ] 아규먼트 spring
+2021-07-14 15:01:36 140 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ selectUserById ] 메서드 실행 전처리 수행
+2021-07-14 15:01:36 140 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ selectUserById ] 아규먼트 spring
+2021-07-14 15:01:36 147 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2021-07-14 15:01:36 155 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@aec50a1]
+2021-07-14 15:01:36 183 [main] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [127356954, URL=jdbc:mariadb://127.0.0.1:3307/spring_db?useUnicode=true&charaterEncoding=utf-8&useSSL=false&serverTimezone=UTC, MariaDB Connector/J] will be managed by Spring
+2021-07-14 15:01:36 188 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - ==>  Preparing: select * from users where userid=? 
+2021-07-14 15:01:36 205 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - ==> Parameters: spring(String)
+2021-07-14 15:01:36 223 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - <==      Total: 1
+2021-07-14 15:01:36 231 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@aec50a1]
+2021-07-14 15:01:36 232 [main] DEBUG myspring.aop.annot.LoggingAspect - @AfterReturing [ getUser ] 메서드 실행 후처리 수행
+2021-07-14 15:01:36 232 [main] DEBUG myspring.aop.annot.LoggingAspect - @AfterReturing [ getUser ] 리턴값=UserVO [id=3, userId=spring, name=스프링변경, gender=여, city=제주]
+2021-07-14 15:01:36 232 [main] DEBUG myspring.aop.annot.LoggingAspect - @After [ getUser ] 메서드 실행 완료
+2021-07-14 15:01:36 234 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@aec50a1]
+2021-07-14 15:01:36 236 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@aec50a1]
+2021-07-14 15:01:36 237 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@aec50a1]
+2021-07-14 15:01:36 245 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ updateUser ] 메서드 실행 전처리 수행
+2021-07-14 15:01:36 246 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ updateUser ] 아규먼트 UserVO [id=null, userId=spring, name=스프링변경, gender=여, city=제주]
+2021-07-14 15:01:36 248 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ update ] 메서드 실행 전처리 수행
+2021-07-14 15:01:36 250 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ update ] 아규먼트 UserVO [id=null, userId=spring, name=스프링변경, gender=여, city=제주]
+2021-07-14 15:01:36 252 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ updateUser ] 메서드 실행 전처리 수행
+2021-07-14 15:01:36 253 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ updateUser ] 아규먼트 UserVO [id=null, userId=spring, name=스프링변경, gender=여, city=제주]
+2021-07-14 15:01:36 253 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2021-07-14 15:01:36 254 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3113a37]
+2021-07-14 15:01:36 269 [main] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [205615258, URL=jdbc:mariadb://127.0.0.1:3307/spring_db?useUnicode=true&charaterEncoding=utf-8&useSSL=false&serverTimezone=UTC, MariaDB Connector/J] will be managed by Spring
+2021-07-14 15:01:36 270 [main] DEBUG myspring.user.dao.mapper.UserMapper.updateUser - ==>  Preparing: update users set name = ?, gender = ?, city = ? where userid = ? 
+2021-07-14 15:01:36 271 [main] DEBUG myspring.user.dao.mapper.UserMapper.updateUser - ==> Parameters: 스프링변경(String), 여(String), 제주(String), spring(String)
+2021-07-14 15:01:36 273 [main] DEBUG myspring.user.dao.mapper.UserMapper.updateUser - <==    Updates: 1
+2021-07-14 15:01:36 274 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3113a37]
+2021-07-14 15:01:36 274 [main] DEBUG myspring.aop.annot.LoggingAspect - @After [ updateUser ] 메서드 실행 완료
+2021-07-14 15:01:36 274 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3113a37]
+2021-07-14 15:01:36 274 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3113a37]
+2021-07-14 15:01:36 276 [main] DEBUG myspring.aop.annot.LoggingAspect - @AfterReturing [ updateUser ] 메서드 실행 후처리 수행
+2021-07-14 15:01:36 277 [main] DEBUG myspring.aop.annot.LoggingAspect - @AfterReturing [ updateUser ] 리턴값=null
+2021-07-14 15:01:36 277 [main] DEBUG myspring.aop.annot.LoggingAspect - @After [ updateUser ] 메서드 실행 완료
+2021-07-14 15:01:36 279 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ getUser ] 메서드 실행 전처리 수행
+2021-07-14 15:01:36 280 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ getUser ] 아규먼트 spring
+2021-07-14 15:01:36 280 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ read ] 메서드 실행 전처리 수행
+2021-07-14 15:01:36 280 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ read ] 아규먼트 spring
+2021-07-14 15:01:36 281 [main] DEBUG myspring.aop.annot.LoggingAspect - >>>> @Before [ selectUserById ] 메서드 실행 전처리 수행
+2021-07-14 15:01:36 282 [main] DEBUG myspring.aop.annot.LoggingAspect - @Before [ selectUserById ] 아규먼트 spring
+2021-07-14 15:01:36 283 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2021-07-14 15:01:36 284 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7db0565c]
+2021-07-14 15:01:36 287 [main] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [1391119179, URL=jdbc:mariadb://127.0.0.1:3307/spring_db?useUnicode=true&charaterEncoding=utf-8&useSSL=false&serverTimezone=UTC, MariaDB Connector/J] will be managed by Spring
+2021-07-14 15:01:36 290 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - ==>  Preparing: select * from users where userid=? 
+2021-07-14 15:01:36 294 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - ==> Parameters: spring(String)
+2021-07-14 15:01:36 300 [main] DEBUG myspring.user.dao.mapper.UserMapper.selectUserById - <==      Total: 1
+2021-07-14 15:01:36 302 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7db0565c]
+2021-07-14 15:01:36 302 [main] DEBUG myspring.aop.annot.LoggingAspect - @AfterReturing [ getUser ] 메서드 실행 후처리 수행
+2021-07-14 15:01:36 303 [main] DEBUG myspring.aop.annot.LoggingAspect - @AfterReturing [ getUser ] 리턴값=UserVO [id=3, userId=spring, name=스프링변경, gender=여, city=제주]
+2021-07-14 15:01:36 303 [main] DEBUG myspring.aop.annot.LoggingAspect - @After [ getUser ] 메서드 실행 완료
+2021-07-14 15:01:36 304 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7db0565c]
+2021-07-14 15:01:36 304 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7db0565c]
+2021-07-14 15:01:36 304 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7db0565c]
